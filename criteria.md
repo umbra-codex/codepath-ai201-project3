@@ -53,61 +53,51 @@ whether you hit them:
 
 ## 1.
 
-<!-- Your criterion. It must name a number. -->
-
-
+Accuracy on the held-out test split is at least 0.60 on all three seeds.
 
 **Why this target:**
 
-
+My labels are four-way, so chance is 0.25, and a model that always guesses `opinion` would score about 0.42 on my data. 0.60 sits 18 points above that guesser. The test split is only about 30 posts, so one post moves accuracy 3.3 points and the seeds will land close to the line. That is why I did not set it higher.
 
 ---
 
 ## 2.
 
-<!-- Your criterion. -->
-
-
+Macro F1 is at least 0.50 on all three seeds, and F1 is at least 0.50 for `opinion`, `news` and `report`. I report `analysis` F1 and its support beside these but do not pass or fail it on its own.
 
 **Why this target:**
 
-
+`analysis` is my thinnest label: 4 of my first 43 rows, so about 3 or 4 test posts. One post swings its F1 by 0.2 or more, and a pass or fail on that is mostly luck. Macro F1 uses all four labels and holds steadier, while the three larger labels get their own bar.
 
 ---
 
 ## 3.
 
-<!-- Your criterion. -->
-
-
+No label is above 50% of `labels.csv`, and none is below 12% (about 24 of 200 rows). I check this on the labeled file before training.
 
 **Why this target:**
 
-
+The course cap is 70%. `opinion` leads at 42% of my first 43 rows, and `analysis` sits at 9%, too small for the model to learn from. Reaching the 12% floor takes about 20 more `analysis` rows, which is why I set the floor there.
 
 ---
 
 ## 4.
 
-<!-- Your criterion. -->
-
-
+I agree with the staff labels on at least 21 of the 30 staff-set posts (70%), labeling under the staff taxonomy.
 
 **Why this target:**
 
-
+This measures me against staff, not the model. Staff picked several of the 30 because they are ambiguous, so 100% is not realistic. My blind test of eight boundary posts matched my key only 4 of 8 before I tightened the rules, so 70% is a stretch for me.
 
 ---
 
 ## 5.
 
-<!-- Your criterion. -->
-
-
+On all three seeds, the model's mean confidence when it is right is higher than when it is wrong, and accuracy in the most-confident third of test predictions is at least 0.60.
 
 **Why this target:**
 
-
+Each confidence third is only about 10 posts, so one post moves it 10 points. So I set a loose floor instead of a tight gap between thirds, and I also compare means over all 30 posts. If the most-confident third is not more accurate, the scores cannot rank which WSB posts need a human read.
 
 ---
 
