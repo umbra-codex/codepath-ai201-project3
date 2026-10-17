@@ -21,6 +21,10 @@
 >
 > **The rest of this file is your submission.** Fill it in as you go.
 
+## Stretch Features
+
+**Stretch 1 (declared before starting): a fourth label, `news`.** r/wallstreetbets posts a lot of outside events (earnings, tariffs, lawsuits, headlines). The three core labels (`opinion`, `analysis`, `report`) have no place for a post whose main job is relaying that event, so `news` covers it.
+
 ---
 
 <!-- ─────────────────────────────────────────────────────────────────────────
