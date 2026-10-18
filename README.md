@@ -47,140 +47,129 @@
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
-
-
+TakeMeter sorts posts from r/wallstreetbets, a public investing forum on Reddit, by what the post is doing. There are four labels: `opinion` (a mood, joke or view with nothing checkable behind it), `analysis` (a view backed by a number, catalyst or mechanism), `result` (the poster's own outcome or position) and `news` (an outside event or data). I picked this forum because quality varies so much: a one-line joke, a screenshot of a loss and a long thesis all sit in the same feed. The classifier reads only the text of a post, never the image, so I dropped posts whose meaning lived in a picture.
 
 ---
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
+### `opinion`
 
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
-
-### `label_one`
-
-**Definition:**
+**Definition:** The poster states a mood, joke or view, bullish or bearish, with no checkable support behind it.
 
 **Example 1:**
->
+> WE ARE SO FUCKING BACK
 
 **Example 2:**
->
+> The whole world has become a casino
 
-### `label_two`
+### `analysis`
 
-**Definition:**
+**Definition:** The poster argues a view or a trade using support a reader could check, such as a number, a catalyst or a causal mechanism.
 
 **Example 1:**
->
+> Anthropic are not going to be profitable. In 2025, Anthropic made $4b rev, -$46b costs for a net loss of -$42 billion.
 
 **Example 2:**
->
+> broad market is breaking down while top 10 big tech holds up the s&p 500 illusion. literally 66% of s&p 500 stocks are quietly bleeding out and hitting 52-week lows
+
+### `result`
+
+**Definition:** The poster states what they did, hold or got: an outcome (a gain, loss or "I'm up/down") or a bare position with no reason attached.
+
+**Example 1:**
+> 69 bagger, $30k -> $2.09mil. what a ride it's been holding on to these leaps for just over 2years. finally exercised.
+
+**Example 2:**
+> Good bye Wallstreet. From $200,000 to nearly $800,000 with some lucky call options, I think this is enough for me.
+
+### `news`
+
+**Definition:** The post relays facts or data about the market or the world, such as an event, a filing or compiled performance numbers, and not the poster's own outcome.
+
+**Example 1:**
+> President Trump says he will no longer be imposing 10% tariffs on EU countries on February 1st.
+
+**Example 2:**
+> Apple sues OpenAI alleging trade secret theft, says scheme was 'at every level'
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `result` and `analysis`
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
-
-
+If the post states the poster's own outcome on the position the post is about, it is `result`, even when most of the text is a thesis. If it argues for a position and states no outcome on it, it is `analysis`. A bare position with no reason is `result`. A past outcome on a different trade does not move a thesis post into `result`. The test is what the words say, not what they imply: "down 18%" with no owner is the market's move, not the poster's. The other boundary I hit often is `opinion` versus `analysis`. There, support has to be specific and checkable, so a joke, or a post that only challenges other traders, is `opinion` even when it names numbers or mechanisms.
 
 ---
 
 ## The Dataset
 
-<!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
+**Where the posts came from:** r/wallstreetbets, which is public and needs no login. I saved Reddit's public JSON listings from my browser (hot, new, and top of the week, month and year) plus searches for the DD and Discussion flairs. That gave 556 unique posts. I kept 207 and dropped any post whose label I could not tell from the title and body alone, mostly image and video posts, plus `[removed]` and empty threads.
 
-**Where the posts came from:**
-
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labeled them:** Rows come from three methods, and the `note` column in `labels.csv` names each one. `cold` (20 rows): I judged 30 posts against my written definitions with no tools, kept 20 and dropped 10 under the text-only rule. `discussed with Aurora` (43 rows): I labeled these in conversation with Claude, the assistant I called Aurora, while the definitions were still forming, so they are not cold. `pre-labeled, checked` or `pre-labeled, corrected` (144 rows): Claude proposed labels in five batches from my written definitions and rules, and I read and corrected every row (details under How I Used AI). Partway through I renamed `report` to `result`, because the old name kept pulling me toward "someone reports something" when the label means the poster's own outcome. The rename and the rule changes are logged in `notes.md`.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `result` | 67 | 32% |
+| `opinion` | 49 | 24% |
+| `analysis` | 46 | 22% |
+| `news` | 45 | 22% |
+| **Total** | 207 | 100% |
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+> *The post:* "I am financially ruined (short selling Korean fried chicken companies)." It lays out a full thesis about Korea's declining population and healthier eating, then says "This week I lost $472,085."
 >
-> *Could have been:*
+> *Could have been:* `analysis` or `result`
 >
-> *I chose, because:*
+> *I chose `result`, because* it states a specific dollar loss on the position the post is about, and a stated outcome beats a thesis in the same post.
 
 **2.**
-> *The post:*
+> *The post:* "THE DEFLATION GLITCH: Why $2 Bills are the ultimate hedge against the Fed." It cites circulation counts for $2 and $1 bills.
 >
-> *Could have been:*
+> *Could have been:* `analysis` or `opinion`
 >
-> *I chose, because:*
+> *I chose `opinion`, because* it is satire. The numbers look like support, but the joke is the point, so a reader is not meant to dispute them.
 
 **3.**
-> *The post:*
+> *The post:* "Mean reversion traders - why are you so certain on bonds?" It names deficits, heavy treasury issuance and a higher term premium.
 >
-> *Could have been:*
+> *Could have been:* `analysis` or `opinion`
 >
-> *I chose, because:*
+> *I chose `opinion`, because* it names mechanisms but only to challenge other traders. It makes no argument of its own that a reader could check.
 
 ---
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
+**Base model:** `distilbert-base-uncased`
 
-**Base model:**
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, 128 tokens per post, seed 42. I trained on the CPU.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Anything I changed from the defaults, and why:** Nothing. I kept the defaults so the first run is a clean reference point.
 
-**Anything I changed from the defaults, and why:**
-
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
-
-
+**Split sizes:** 144 train, 31 validation, 32 test. Test per label: `opinion` 8, `analysis` 7, `result` 10, `news` 7. `analysis` and `news` have fewer than 8 test examples, so their scores will swing between seeds. The notebook made the split at random within each label, so all three labeling methods appear in all three splits; the test split has 24 pre-labeled rows, 7 discussed and 1 cold.
 
 ---
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
-
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
-
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Claude wrote eight posts that sit on the boundaries of my four labels, and I labeled them blind from my definitions.
+- *What came back:* On my first pass I matched its key on 4 of 8. The misses showed three gaps: "mechanism" had no definition, two near-identical posts (a position plus a reason) got different labels from me, and a news post with an opinion tail went the wrong way.
+- *What I changed:* I added three written rules. Support has to be specific and checkable, a stated personal result decides `result` over `analysis`, and an outside event with an unsupported tail stays `news`. After those rules, one post still fit two labels because of how Claude had worded it, so I dropped it from the key.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked Claude to draft five acceptance criteria, each with a number and a reason for it, and I accepted the drafts. Before filing them I asked a second AI model from a different vendor to review those five.
+- *What came back:* It pointed out that an F1 target on only a handful of `analysis` test posts (about 4 at the time, 7 in the final split) is close to a coin flip, and that a confidence target built on thirds of about 10 posts is too noisy.
+- *What I changed:* I replaced the `analysis` F1 target with a macro F1 target and report `analysis` F1 beside it without a pass or fail. I rebuilt the confidence criterion around mean confidence when right versus wrong, plus accuracy on the most confident third of predictions. I kept the balance and agreement criteria, and I rejected its suggestion to measure agreement against the model, because the agreement check is me against the course's 30-post staff set, not the model.
 
-**Pre-labelling disclosure:**
+**Pre-labeling disclosure:** Claude pre-labeled 177 posts in five batches (12 to 45 posts each) from my written definitions and decision rules, with a one-line reason for each. I read every row. I changed 7 labels, dropped 18 posts that Claude had labeled under the text-only rule, agreed with its 15 proposed drops, and kept the remaining labels as proposed. The 144 rows from these batches that survived are in `labels.csv`, marked `pre-labeled` in `note`. The other 63 rows are the 20 cold rows and the 43 I labeled in conversation with Claude. The label definitions and every boundary rule are mine, and several came from disagreeing with Claude's proposed labels.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
