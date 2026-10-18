@@ -27,6 +27,21 @@
 
 **Stretch 2 (declared before starting): a second training run with one hyperparameter changed**, with a note on what moved. I will name the hyperparameter in the run log once I have the first run's results.
 
+**Stretch 2 result.** I changed one thing: `EPOCHS` from 3 to 10. The seed (42), learning rate, batch size, token limit and split stayed the same. I picked epochs before the run because the first run's validation loss barely moved (1.34 to 1.28, against about 1.39 for a random guess), and three epochs is only about 27 gradient steps on 144 training posts. The second run is saved as `results_stretch2_epochs10.json`; `results.json` and `test_split.csv` still hold the first run.
+
+| Measure on the same 32 test posts | Run 1 (3 epochs) | Run 2 (10 epochs) |
+|---|---|---|
+| Accuracy | 0.438 | 0.750 |
+| Macro F1 | 0.344 | 0.707 |
+| F1 `opinion` | 0.000 | 0.200 |
+| F1 `analysis` | 0.250 | 0.857 |
+| F1 `result` | 0.526 | 0.769 |
+| F1 `news` | 0.600 | 1.000 |
+| Accuracy, most confident third | 0.80 | 0.90 |
+| Accuracy, least confident third | 0.30 | 0.60 |
+
+What moved: `analysis` and `news` went from mostly wrong to mostly right, and the model got more careful about its own confidence. What did not move is `opinion`. Run 1 sent all 8 test `opinion` posts to `result`; run 2 sends 6 of 8 there and gets one right. More training taught the model the difference between an argument and an outside event, but not the line between a take and a personal outcome. It also over-calls `result`: recall 1.0, precision 0.62. This is one seed on 32 posts, so one post is about 3 points of accuracy, and `analysis` and `news` have only 7 test posts each. I read it as a direction, not a measurement, and I did not tune anything further after seeing it.
+
 **Stretch 3: not pursued.** I declared it early, then dropped it because collecting 50 extra `analysis` posts was taking too much time. By then `analysis` was no longer my thinnest label (about 23% of the file).
 
 ---
