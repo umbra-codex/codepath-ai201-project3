@@ -1,0 +1,50 @@
+{
+ "1": [
+  "opinion",
+  "joke"
+ ],
+ "2": [
+  "news",
+  "outside report"
+ ],
+ "3": [
+  "result",
+  "his own gain and sale"
+ ],
+ "4": [
+  "drop",
+  "the subject is blanked out; needs the image"
+ ],
+ "5": [
+  "result",
+  "his position with a vague tail; weak, the tail is an opinion tail"
+ ],
+ "6": [
+  "result",
+  "his own sale and price"
+ ],
+ "7": [
+  "result",
+  "his position and a loss"
+ ],
+ "8": [
+  "news",
+  "outside report"
+ ],
+ "9": [
+  "result",
+  "his position, plus a question; weak"
+ ],
+ "10": [
+  "news",
+  "outside event with a tail"
+ ],
+ "11": [
+  "opinion",
+  "a take"
+ ],
+ "12": [
+  "result",
+  "his own sale"
+ ]
+}

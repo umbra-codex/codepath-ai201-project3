@@ -1,0 +1,162 @@
+{
+ "1": [
+  "news",
+  "outside report"
+ ],
+ "2": [
+  "analysis",
+  "position plus reasons, no result"
+ ],
+ "3": [
+  "report",
+  "his own holding and result"
+ ],
+ "4": [
+  "analysis",
+  "strategy and thesis"
+ ],
+ "5": [
+  "news",
+  "relays an article"
+ ],
+ "6": [
+  "report",
+  "his own loss"
+ ],
+ "7": [
+  "opinion",
+  "a position, no result or reason; weak"
+ ],
+ "8": [
+  "analysis",
+  "event plus his own claim"
+ ],
+ "9": [
+  "news",
+  "outside filing, question tail"
+ ],
+ "10": [
+  "opinion",
+  "joke"
+ ],
+ "11": [
+  "opinion",
+  "off-topic joke"
+ ],
+ "12": [
+  "analysis",
+  "long thesis"
+ ],
+ "13": [
+  "drop",
+  "the gain is in the image"
+ ],
+ "14": [
+  "analysis",
+  "long thesis"
+ ],
+ "15": [
+  "analysis",
+  "long thesis with a small position note at the top; same check as ADBE"
+ ],
+ "16": [
+  "report",
+  "his own loss, no figure; weak, also a question"
+ ],
+ "17": [
+  "report",
+  "his own position and success"
+ ],
+ "18": [
+  "drop",
+  "no content"
+ ],
+ "19": [
+  "report",
+  "his own debt"
+ ],
+ "20": [
+  "report",
+  "his own loss"
+ ],
+ "21": [
+  "report",
+  "his own position and realized gains"
+ ],
+ "22": [
+  "news",
+  "relays an article with commentary; unsure vs analysis"
+ ],
+ "23": [
+  "report",
+  "his own loss"
+ ],
+ "24": [
+  "analysis",
+  "numbered thesis"
+ ],
+ "25": [
+  "analysis",
+  "share counts and a squeeze argument"
+ ],
+ "26": [
+  "opinion",
+  "a question; weak"
+ ],
+ "27": [
+  "report",
+  "his own gain"
+ ],
+ "28": [
+  "opinion",
+  "a question"
+ ],
+ "29": [
+  "news",
+  "outside report"
+ ],
+ "30": [
+  "opinion",
+  "satire written like analysis"
+ ],
+ "31": [
+  "analysis",
+  "price target and reasons"
+ ],
+ "32": [
+  "news",
+  "outside event"
+ ],
+ "33": [
+  "analysis",
+  "event plus his own causal claim"
+ ],
+ "34": [
+  "drop",
+  "no content"
+ ],
+ "35": [
+  "news",
+  "compiled outside data; unsure"
+ ],
+ "36": [
+  "drop",
+  "needs the image"
+ ],
+ "37": [
+  "news",
+  "outside event with a tail"
+ ],
+ "38": [
+  "report",
+  "his own loss"
+ ],
+ "39": [
+  "drop",
+  "no content"
+ ],
+ "40": [
+  "news",
+  "outside event"
+ ]
+}

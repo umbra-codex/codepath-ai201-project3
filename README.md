@@ -23,7 +23,11 @@
 
 ## Stretch Features
 
-**Stretch 1 (declared before starting): a fourth label, `news`.** r/wallstreetbets posts a lot of outside events (earnings, tariffs, lawsuits, headlines). The three core labels (`opinion`, `analysis`, `report`) have no place for a post whose main job is relaying that event, so `news` covers it.
+**Stretch 1 (declared before starting): a fourth label, `news`.** r/wallstreetbets posts a lot of outside events (earnings, tariffs, lawsuits, headlines). The three core labels (`opinion`, `analysis`, `result`) have no place for a post whose main job is relaying that event, so `news` covers it.
+
+**Stretch 2 (declared before starting): a second training run with one hyperparameter changed**, with a note on what moved. I will name the hyperparameter in the run log once I have the first run's results.
+
+**Stretch 3: not pursued.** I declared it early, then dropped it because collecting 50 extra `analysis` posts was taking too much time. By then `analysis` was no longer my thinnest label (about 23% of the file).
 
 ---
 

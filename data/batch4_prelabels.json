@@ -1,0 +1,182 @@
+{
+ "1": [
+  "opinion",
+  "praise for another person; his gains are not the poster's"
+ ],
+ "2": [
+  "news",
+  "outside report"
+ ],
+ "3": [
+  "analysis",
+  "long DD"
+ ],
+ "4": [
+  "result",
+  "his own gain"
+ ],
+ "5": [
+  "result",
+  "his own loss in words; weak"
+ ],
+ "6": [
+  "result",
+  "his own loss"
+ ],
+ "7": [
+  "opinion",
+  "joke with a few facts; unsure"
+ ],
+ "8": [
+  "opinion",
+  "a rant; likely needs an image"
+ ],
+ "9": [
+  "result",
+  "his own loss"
+ ],
+ "10": [
+  "result",
+  "his own deficit; also a question; weak"
+ ],
+ "11": [
+  "analysis",
+  "long DD with positions, no result"
+ ],
+ "12": [
+  "news",
+  "outside report"
+ ],
+ "13": [
+  "analysis",
+  "mechanisms: deficits, issuance, term premium"
+ ],
+ "14": [
+  "opinion",
+  "position and joke, no outcome; weak"
+ ],
+ "15": [
+  "drop",
+  "no content"
+ ],
+ "16": [
+  "analysis",
+  "long DD"
+ ],
+ "17": [
+  "analysis",
+  "position and long thesis, no result"
+ ],
+ "18": [
+  "opinion",
+  "a question"
+ ],
+ "19": [
+  "analysis",
+  "P/E, debt, margins"
+ ],
+ "20": [
+  "opinion",
+  "a question; he holds at a loss with no figure; weak"
+ ],
+ "21": [
+  "drop",
+  "no content"
+ ],
+ "22": [
+  "opinion",
+  "joke"
+ ],
+ "23": [
+  "analysis",
+  "short thesis with rates and levels"
+ ],
+ "24": [
+  "opinion",
+  "satire written like analysis"
+ ],
+ "25": [
+  "news",
+  "outside earnings, short tail"
+ ],
+ "26": [
+  "drop",
+  "positions only; two labels fit"
+ ],
+ "27": [
+  "drop",
+  "needs the image"
+ ],
+ "28": [
+  "opinion",
+  "a stance with vague reasons; unsure"
+ ],
+ "29": [
+  "opinion",
+  "a mood"
+ ],
+ "30": [
+  "opinion",
+  "position, no outcome, weak"
+ ],
+ "31": [
+  "news",
+  "relays an outside announcement; weak, needs the image"
+ ],
+ "32": [
+  "result",
+  "his own loss"
+ ],
+ "33": [
+  "result",
+  "his own gain"
+ ],
+ "34": [
+  "result",
+  "his own loss"
+ ],
+ "35": [
+  "result",
+  "his own swings"
+ ],
+ "36": [
+  "analysis",
+  "thesis and a position, no result"
+ ],
+ "37": [
+  "analysis",
+  "causal thesis"
+ ],
+ "38": [
+  "opinion",
+  "a question"
+ ],
+ "39": [
+  "result",
+  "his own loss"
+ ],
+ "40": [
+  "analysis",
+  "long DD"
+ ],
+ "41": [
+  "result",
+  "his own loss in progress; weak"
+ ],
+ "42": [
+  "analysis",
+  "long thesis"
+ ],
+ "43": [
+  "result",
+  "his own loss"
+ ],
+ "44": [
+  "result",
+  "his own 90% loss"
+ ],
+ "45": [
+  "analysis",
+  "P/E and earnings numbers"
+ ]
+}

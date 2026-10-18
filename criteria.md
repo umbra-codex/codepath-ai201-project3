@@ -65,6 +65,8 @@ My labels are four-way, so chance is 0.25, and a model that always guesses `opin
 
 Macro F1 is at least 0.50 on all three seeds, and F1 is at least 0.50 for `opinion`, `news` and `report`. I report `analysis` F1 and its support beside these but do not pass or fail it on its own.
 
+> **Note (2026-10-18):** the label `report` is now called `result`. Its meaning and this target are unchanged.
+
 **Why this target:**
 
 `analysis` is my thinnest label: 4 of my first 43 rows, so about 3 or 4 test posts. One post swings its F1 by 0.2 or more, and a pass or fail on that is mostly luck. Macro F1 uses all four labels and holds steadier, while the three larger labels get their own bar.
