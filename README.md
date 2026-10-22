@@ -44,6 +44,12 @@ What moved: `analysis` and `news` went from mostly wrong to mostly right, and th
 
 **Stretch 3: not pursued.** I declared it early, then dropped it because collecting 50 extra `analysis` posts was taking too much time. By then `analysis` was no longer my thinnest label (about 23% of the file).
 
+**Unit 6 Stretch A (declared before starting): a confidence check.** I will test whether the model's confident predictions are right more often than its unsure ones. For each of the three seeds I split the 32 test posts into thirds by confidence and compare accuracy across the thirds. This reuses criterion 5, and the table goes in Run Log — Before.
+
+**Unit 6 Stretch B (declared before starting): a per-label error write-up** for whichever label the confusion matrix shows is worst. I expect `opinion`, because in my Stretch 2 run it lost 6 of 8 test posts to `result`, but the matrix decides.
+
+**Unit 6 Stretch C (declared before starting): a second improvement**, measured the same way as the first: change one thing, retrain on the same three seeds, and put both result sets side by side. I will pick it after the first improvement's results are in. Labels, taxonomy and criteria stay where they were for both improvements.
+
 ---
 
 <!-- ─────────────────────────────────────────────────────────────────────────
