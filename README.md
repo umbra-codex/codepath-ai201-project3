@@ -204,20 +204,45 @@ If the post states the poster's own outcome on the position the post is about, i
 <!-- Both models on the same posts. `python baseline.py --trained results.json`
      prints this table for you. -->
 
+Baseline: `facebook/bart-large-mnli`, zero-shot, with my four definitions from `label_definitions.txt`. Trained: the 3-epoch run in `results.json`. Both are scored on the same 32 posts in `test_split.csv`, so the comparison is like-for-like.
+
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.188 | 0.438 | +0.250 |
+| Macro F1 | 0.086 | 0.344 | +0.258 |
+| F1 — `analysis` | 0.343 | 0.250 | -0.093 |
+| F1 — `news` | 0.000 | 0.600 | +0.600 |
+| F1 — `opinion` | 0.000 | 0.000 | +0.000 |
+| F1 — `result` | 0.000 | 0.526 | +0.526 |
+
+The same baseline with bare label names instead of my definitions (`baseline_results_bare_names.json`), which I ran once on purpose to measure what the definitions were worth:
+
+| Measure | Baseline, bare names | Trained | Difference |
+|---|---|---|---|
+| Overall accuracy | 0.375 | 0.438 | +0.062 |
+| Macro F1 | 0.303 | 0.344 | +0.042 |
+| F1 — `analysis` | 0.000 | 0.250 | +0.250 |
+| F1 — `news` | 0.286 | 0.600 | +0.314 |
+| F1 — `opinion` | 0.444 | 0.000 | -0.444 |
+| F1 — `result` | 0.480 | 0.526 | +0.046 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
 
+I predict the trained model (the 3-epoch run in `results.json`) beats the baseline only on `result`, my largest label, and loses overall, because three epochs on 144 posts barely moved the validation loss while the baseline gets my full definitions. (Written before running `baseline.py`; I had already seen the trained numbers, so this is not blind on that side.)
+
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
+
+My prediction was half right. The trained model did beat the baseline on `result` (0.526 against 0.000), but it also won on `news` and overall, so "only on `result`" and "loses overall" were both wrong.
+
+The baseline with my definitions scored 0.188 accuracy, below the 0.25 that a random guess earns on four labels. Nearly all of it is one failure: it called 28 of 32 posts `analysis`. That took in all 7 `news` posts, 7 of 8 `opinion` posts and 8 of 10 `result` posts, and it is also why `analysis` has the baseline's best F1 (0.343): it got 6 of 7 right and mislabeled 22 others. My guess at the cause, which I did not test, is that `baseline.py` slots each definition into "This post is {}.", and my `analysis` definition is the one that reads like something a post can match, while `opinion` is defined mostly by what is missing.
+
+With bare label names the baseline did better: 0.375 accuracy and 0.303 macro F1, spread over `result` (15 predictions), `opinion` (10) and `news` (7), and never `analysis`. So my definitions were worth about -19 points of accuracy to this model: they made it worse, not better. I am reporting the with-definitions run as the baseline because that is the run the milestone asks for, and the bare-names run is beside it.
+
+Against the stronger bare-names baseline, the trained model's lead shrinks to 0.062 accuracy, and it loses `opinion` outright (0.000 against 0.444). Three epochs of fine-tuning added little over a zero-shot guess from label names. The test split is 32 posts, so one post is about 3 points and none of these gaps is precise.
 
 
 
