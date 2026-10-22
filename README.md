@@ -253,31 +253,79 @@ Against the stronger bare-names baseline, the trained model's lead shrinks to 0.
 <!-- Five criteria across three seeds. The notebook's section 6 prints the
      spread table; the Target and Verdict columns are yours. -->
 
+Fine-tuned `distilbert-base-uncased` on CPU (`device: cpu`, torch 2.14.1+cu130): 10 epochs (the setting I chose in Stretch 2), learning rate 2e-5, batch size 16, 128 tokens per post. Each seed gives a different 144 / 31 / 32 split of the same 207 posts. The per-label test counts are the same on every seed (7 `analysis`, 7 `news`, 8 `opinion`, 10 `result`). Numbers come from `results_three_seeds_before.json`.
+
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Accuracy | at least 0.60 on all three seeds | 0.750 | 0.625 | 0.719 | Met (seed 7 clears it by one post: 20 of 32, where 19 would have failed) |
+| 2. Macro F1 and per-label F1 | on all three seeds, macro F1 at least 0.50 and F1 at least 0.50 for `opinion`, `news` and `result` | macro 0.707<br>`opinion` 0.200<br>`news` 1.000<br>`result` 0.769 | macro 0.585<br>`opinion` 0.222<br>`news` 0.857<br>`result` 0.762 | macro 0.648<br>`opinion` 0.222<br>`news` 0.750<br>`result` 0.870 | Missed on `opinion` only (0.20 to 0.22 on every seed); macro F1, `news` and `result` all passed |
+| 3. Balance | no label above 50% or below 12% of `labels.csv` | 32% to 22% | same file | same file | Met. The mix moved after I wrote the criterion, which cites `opinion` at 42% of my first 43 rows; the final file is `result` 32%, `opinion` 24%, `analysis` 22%, `news` 22% |
+| 4. Agreement with staff | at least 21 of 30 | pending | pending | pending | Pending (Milestone 3) |
+| 5. Confidence | on all three seeds, mean confidence higher when right than wrong, and accuracy at least 0.60 in the most confident third | right 0.576, wrong 0.471<br>top third 0.90 | right 0.573, wrong 0.447<br>top third 0.90 | right 0.582, wrong 0.477<br>top third 0.90 | Met |
+
+`analysis` F1, reported beside criterion 2 without a pass or fail: 0.857, 0.500, 0.750.
+
+The full spread table from section 6:
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.750 | 0.625 | 0.719 | 0.125 |
+| Macro F1 | 0.707 | 0.585 | 0.648 | 0.121 |
+| F1 — `opinion` | 0.200 | 0.222 | 0.222 | 0.022 |
+| F1 — `analysis` | 0.857 | 0.500 | 0.750 | 0.357 |
+| F1 — `result` | 0.769 | 0.762 | 0.870 | 0.108 |
+| F1 — `news` | 1.000 | 0.857 | 0.750 | 0.250 |
+
+**The spread.** Accuracy moved 0.125 across the three seeds and macro F1 moved 0.121 (from the unrounded values, 0.7066 and 0.5853), both over the brief's ten-point threshold for a stable measure. The spread comes from the 32-post test split: one post is about 3 points of accuracy, so four posts are enough to cross the line. `analysis` (0.357) and `news` (0.250) swung most, and both have 7 true posts per split. On seed 7 `analysis` precision fell to 0.385 (5 of 13 `analysis` predictions were right), so on that split the model over-called `analysis`, and one post does not explain that. `opinion` is the opposite case: its F1 barely moved (0.022) because it stayed bad on every seed, so for that label the problem is not noise.
+
+**Stretch A, the confidence check.** On all three seeds the confident predictions were right more often than the unsure ones:
+
+| Seed | Accuracy, most confident third (10 posts) | Accuracy, least confident third (10 posts) | Mean confidence when right | Mean confidence when wrong |
+|---|---|---|---|---|
+| 42 | 0.90 | 0.60 | 0.576 | 0.471 |
+| 7 | 0.90 | 0.40 | 0.573 | 0.447 |
+| 2024 | 0.90 | 0.60 | 0.582 | 0.477 |
+
+The most confident third was right 9 times in 10 on every seed. The gap between right and wrong is small in absolute terms (about 0.10 to 0.13 of confidence), and a third is only 10 posts, so a single post moves it 10 points. I read it as confidence pointing the right way on 10-post thirds: a direction, not a calibrated probability.
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+Seed 42 (the one section 7 prints), rows are the true label and columns are the model's guess:
+
+| true \ predicted | opinion | analysis | result | news |
+|---|---|---|---|---|
+| **opinion** | 1 | 1 | 6 | 0 |
+| **analysis** | 1 | 6 | 0 | 0 |
+| **result** | 0 | 0 | 10 | 0 |
+| **news** | 0 | 0 | 0 | 7 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
 
+On seed 42, 6 real `opinion` posts were called `result` and 0 real `result` posts were called `opinion`. The model predicted `result` 16 times for 10 true `result` posts, and only 1 of the 8 `opinion` posts came back right (recall 0.125). That is the `opinion` to `result` boundary, with the errors running one way. The other two seeds show the same weak `opinion` (1 of 8 right each) but a different destination: on seed 7, 5 of the 8 went to `analysis` and 2 to `result`, and on seed 2024 they scattered across `result` (3), `analysis` (2) and `news` (2). So the `opinion` failure holds on every seed, while which label absorbs it changes with the split. `news` misses 0, 1 and 1 posts and `result` misses 0, 2 and 0. `analysis` misses 1, 2 and 1, so it is never fully clean either. The `opinion` to `result` direction is one-seed evidence, so I treat it as a lead for the diagnosis, not a finding, and I have not tested why.
 
+Seed 7:
+
+| true \ predicted | opinion | analysis | result | news |
+|---|---|---|---|---|
+| **opinion** | 1 | 5 | 2 | 0 |
+| **analysis** | 0 | 5 | 1 | 1 |
+| **result** | 0 | 2 | 8 | 0 |
+| **news** | 0 | 1 | 0 | 6 |
+
+Seed 2024:
+
+| true \ predicted | opinion | analysis | result | news |
+|---|---|---|---|---|
+| **opinion** | 1 | 2 | 3 | 2 |
+| **analysis** | 0 | 6 | 0 | 1 |
+| **result** | 0 | 0 | 10 | 0 |
+| **news** | 0 | 1 | 0 | 6 |
 
 ---
 
