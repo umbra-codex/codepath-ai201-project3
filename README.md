@@ -190,6 +190,14 @@ If the post states the poster's own outcome on the position the post is about, i
 - *What came back:* It pointed out that an F1 target on only a handful of `analysis` test posts (about 4 at the time, 7 in the final split) is close to a coin flip, and that a confidence target built on thirds of about 10 posts is too noisy.
 - *What I changed:* I replaced the `analysis` F1 target with a macro F1 target and report `analysis` F1 beside it without a pass or fail. I rebuilt the confidence criterion around mean confidence when right versus wrong, plus accuracy on the most confident third of predictions. I kept the balance and agreement criteria, and I rejected its suggestion to measure agreement against the model, because the agreement check is me against the course's 30-post staff set, not the model.
 
+**Moment 3**
+
+- *What I asked for:* After my diagnosis said the `opinion` miss came from an inconsistent `opinion` versus `analysis` boundary, I asked Claude to re-read all 49 `opinion` rows against one rule (a checkable number, event or causal mechanism that carries the argument makes it `analysis`) and propose which to move.
+- *What came back:* Four rows (43, 58, 77, 88). It left the satire posts (18, 153) and the loose-reasons hard case (32) as `opinion`.
+- *What I changed:* I approved the four and Claude edited `labels.csv`, with a note on each row. I then ran the notebook myself and Claude read the output files. The relabel helped on seed 42 only (`opinion` F1 0.200 to 0.600) and left `opinion` below 0.50 on the other two seeds, so I report it as a partial result, not a fix.
+
+**Drafting disclosure for Milestones 3 to 6:** Claude drafted the adjudications, verdicts, diagnoses, after-run log and Still Broken text in this README from my numbers and labels, and I reviewed and approved them. I ran the notebook myself, and Claude ran the agreement script on my saved labels. My staff-set labels are mine: I labeled the 30 posts before opening the staff file, and when I preferred my labels Claude told me staff was right on both disagreements under the written rules, and the README says that.
+
 **Pre-labeling disclosure:** Claude pre-labeled 177 posts in five batches (12 to 45 posts each) from my written definitions and decision rules, with a one-line reason for each. I read every row. I changed 7 labels, dropped 18 posts that Claude had labeled under the text-only rule, agreed with its 15 proposed drops, and kept the remaining labels as proposed. The 144 rows from these batches that survived are in `labels.csv`, marked `pre-labeled` in `note`. The other 63 rows are the 20 cold rows and the 43 I labeled in conversation with Claude. The label definitions and every boundary rule are mine, and several came from disagreeing with Claude's proposed labels.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
