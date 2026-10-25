@@ -260,7 +260,7 @@ Fine-tuned `distilbert-base-uncased` on CPU (`device: cpu`, torch 2.14.1+cu130):
 | 1. Accuracy | at least 0.60 on all three seeds | 0.750 | 0.625 | 0.719 | Met (seed 7 clears it by one post: 20 of 32, where 19 would have failed) |
 | 2. Macro F1 and per-label F1 | on all three seeds, macro F1 at least 0.50 and F1 at least 0.50 for `opinion`, `news` and `result` | macro 0.707<br>`opinion` 0.200<br>`news` 1.000<br>`result` 0.769 | macro 0.585<br>`opinion` 0.222<br>`news` 0.857<br>`result` 0.762 | macro 0.648<br>`opinion` 0.222<br>`news` 0.750<br>`result` 0.870 | Missed on `opinion` only (0.20 to 0.22 on every seed); macro F1, `news` and `result` all passed |
 | 3. Balance | no label above 50% or below 12% of `labels.csv` | 32% to 22% | same file | same file | Met. The mix moved after I wrote the criterion, which cites `opinion` at 42% of my first 43 rows; the final file is `result` 32%, `opinion` 24%, `analysis` 22%, `news` 22% |
-| 4. Agreement with staff | at least 21 of 30 | pending | pending | pending | Pending (Milestone 3) |
+| 4. Agreement with staff | at least 21 of 30 | 28 of 30 | same file | same file | Met (93%) |
 | 5. Confidence | on all three seeds, mean confidence higher when right than wrong, and accuracy at least 0.60 in the most confident third | right 0.576, wrong 0.471<br>top third 0.90 | right 0.573, wrong 0.447<br>top third 0.90 | right 0.582, wrong 0.477<br>top third 0.90 | Met |
 
 `analysis` F1, reported beside criterion 2 without a pass or fail: 0.857, 0.500, 0.750.
@@ -365,7 +365,7 @@ Seed 2024:
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 28 / 30 = 93%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -388,24 +388,26 @@ Seed 2024:
      what you did across your own 200. -->
 
 **1.**
-> *The post:*
+> *The post:* "The club championship scoring changed in 2019 from top-6 to top-10. Since then our B team has finished above the A team twice. That's not depth improving, it's the scoring rewarding turnout."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `analysis` / `hot_take`
 >
-> *My call, and why:*
+> *My call, and why:* Staff is right. I read the confident last sentence as a conclusion reached first. But the post gives a dated rule change and a countable result, and "since then" makes them the reason for the conclusion. Under Rule 1 that is a load-bearing fact, not a flourish. Two events is a thin sample, but Rule 1 asks whether the fact carries the argument, not whether the argument is strong.
 >
-> *Which pile:*
+> *Which pile:* (a) The rule covered it and I applied it loosely.
 
 **2.**
-> *The post:*
+> *The post:* "Three of us ran the same session on the same day, different shoes, within 10 seconds of each other over 5 miles. I'm not saying shoes do nothing, but whatever they do was smaller than the noise between three people."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `analysis` / `reaction`
 >
-> *My call, and why:*
+> *My call, and why:* Staff is right, though my reading was not careless. The post is about the writer's own recent run, which fits the "writer's experience" half of `reaction`. But the definition says `reaction` is feeling rather than argument, and this post has no feeling in it. It argues from a checkable measurement (10 seconds over 5 miles, three runners) to a conclusion about shoes. Rule 3 settles it: recency does not outrank evidence.
 >
-> *Which pile:*
+> *Which pile:* (a) The rule covered it and I applied it loosely.
 
 **What the pattern in my disagreements tells me:**
+
+Both misses went the same way: I kept a post out of `analysis` because of its surface (a confident closing line, a first-person setting) when the facts were doing the work. Both are pile (a), so my reading of Rule 1 and Rule 3 was inconsistent. I should test for a load-bearing fact before looking at tone, and I should check the same thing across my own 200 labels.
 
 
 
