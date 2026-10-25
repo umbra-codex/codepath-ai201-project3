@@ -336,24 +336,24 @@ Seed 2024:
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Accuracy | at least 0.60 on all three seeds | MET | 0.750, 0.625, 0.719. Seed 7 clears it by one post (20 of 32). |
+| 2 | Macro F1 and per-label F1 | macro F1 at least 0.50, and F1 at least 0.50 for `opinion`, `news` and `result`, on all three seeds | MISSED | Macro F1, `news` and `result` pass on every seed. `opinion` is 0.200, 0.222, 0.222, so the criterion fails on all three. |
+| 3 | Balance | no label above 50% or below 12% of `labels.csv` | MET | `result` 32%, `opinion` 24%, `analysis` 22%, `news` 22%. |
+| 4 | Agreement with staff | at least 21 of 30 | MET | 28 of 30 (93%). |
+| 5 | Confidence | mean confidence higher when right than wrong, and accuracy at least 0.60 in the most confident third, on all three seeds | MET | Right 0.576 / 0.573 / 0.582 against wrong 0.471 / 0.447 / 0.477. Top third 0.90 on every seed. |
+
+I did not revise any criterion. Criterion 2 was measurable and I missed it.
 
 **Diagnoses**
 
-<!-- For each miss: the cause, and how you know. The four common causes are:
-     too few examples for a label, a boundary you applied inconsistently, a
-     genuinely hard label pair, and a task the model can't reach from this
-     much data.
+**Criterion 2, `opinion` F1 of 0.20 to 0.22 on every seed.** My cause is a boundary I defined by absence and applied inconsistently, not too few examples. I know four things.
 
-     ⚠️ Use your agreement report as evidence. It is the only instrument you
-     have that can tell a LABELLING problem from a MODEL problem, and this
-     section is graded on whether you used it that way. -->
+- Not too few examples: `opinion` has 49 rows (24%), more than `analysis` with 46 (22%), and `analysis` reached F1 0.857, 0.500 and 0.750. A label with more rows than a label that worked is not starved.
+- Not one hard pair: `opinion` recall is 1 of 8 on every seed, but the misses land in different places: 6 of 8 went to `result` on seed 42, 5 of 8 to `analysis` on seed 7, and on seed 2024 they scattered across `result` (3), `analysis` (2) and `news` (2). A hard pair would lose to the same neighbor each time. Here the model has no consistent signal for `opinion`, which fits a label whose definition is "a mood, joke or view with nothing checkable behind it": it is mostly what the post lacks.
+- My own hard cases show the inconsistency: two of my three hard cases (the `$2` bill post and the mean-reversion post) are `opinion` posts that name numbers or mechanisms, and I kept them out of `analysis` by reading intent (satire, challenging other traders) instead of the text. That rule makes `opinion` contain posts that look like `analysis` on the surface, which a 144-post model cannot separate.
+- The agreement report shows the same lean: on the staff set my two disagreements were `hot_take` and `reaction` where staff said `analysis`. In both, a checkable fact was doing the work and I let tone outvote it. Both landed in pile (a), a rule I applied loosely. That is the same direction as my `opinion` hard cases: I under-credited support. The staff set is not my 207 labels, and my 28 of 30 shows I apply a written rule well when I follow it, so this points to my `opinion` versus `analysis` call being the weak spot, not to labeling in general.
 
-
+What I have not tested: I have not re-read the 49 `opinion` rows against the "fact carries the argument" test, so I do not know how many are mislabeled. Seed spread also matters here (one post is about 3 points), but `opinion` at 0.20 to 0.22 on all three seeds is too stable to be noise. If the re-read finds few mislabeled rows, the cause is closer to a label the model cannot learn from this much data.
 
 ---
 
