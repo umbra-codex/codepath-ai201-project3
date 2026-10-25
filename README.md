@@ -415,40 +415,52 @@ Both misses went the same way: I kept a post out of `analysis` because of its su
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** I relabeled one boundary, `opinion` versus `analysis`, and nothing else. I applied one rule across all 49 `opinion` rows: if a checkable number, event or causal mechanism carries the argument, the post is `analysis`, even when the tone is heated or joking. Four rows changed from `opinion` to `analysis` (rows 43, 58, 77 and 88 of `labels.csv`, each with a note). Rows I left alone on purpose: the satire posts (18, 153) and the loose-reasons hard case (32). The file is now `result` 67, `analysis` 50, `opinion` 45, `news` 45. Training settings, epochs and seeds are unchanged.
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** The Milestone 4 diagnosis for the `opinion` miss (F1 0.20 to 0.22 on every seed). It named an `opinion` versus `analysis` boundary I applied by intent, not by whether a fact carried the argument, and my agreement report showed the same lean on the staff set.
 
 ### Run Log — After
 
+Numbers come from `results_three_seeds_after.json` (10 epochs, learning rate 2e-5, same three seeds).
+
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Accuracy | at least 0.60 on all three seeds | 0.812 | 0.625 | 0.719 | MET |
+| 2. Macro F1 and per-label F1 | macro F1 at least 0.50, and F1 at least 0.50 for `opinion`, `news` and `result`, on all three seeds | macro 0.795<br>`opinion` 0.600<br>`news` 0.923<br>`result` 0.833 | macro 0.585<br>`opinion` 0.250<br>`news` 0.769<br>`result` 0.706 | macro 0.643<br>`opinion` 0.250<br>`news` 0.824<br>`result` 0.833 | MISSED. `opinion` passes on seed 42 only (0.600) and fails on seeds 7 and 2024 (0.250). |
+| 3. Balance | no label above 50% or below 12% of `labels.csv` | 32% to 22% | same file | same file | MET (`result` 32%, `analysis` 24%, `opinion` 22%, `news` 22%) |
+| 4. Agreement with staff | at least 21 of 30 | 28 of 30 | same file | same file | MET (93%, unchanged, since the staff set was not retrained) |
+| 5. Confidence | mean confidence higher when right than wrong, and accuracy at least 0.60 in the most confident third, on all three seeds | right 0.556, wrong 0.387<br>top third 1.00 | right 0.597, wrong 0.410<br>top third 1.00 | right 0.582, wrong 0.452<br>top third 1.00 | MET |
 
-**Did it help, and how do I know:**
+Before and after, side by side:
 
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
+| Measure | Seed 42 before / after | Seed 7 before / after | Seed 2024 before / after |
+|---|---|---|---|
+| Accuracy | 0.750 / 0.812 | 0.625 / 0.625 | 0.719 / 0.719 |
+| Macro F1 | 0.707 / 0.795 | 0.585 / 0.585 | 0.648 / 0.643 |
+| F1 `opinion` | 0.200 / 0.600 | 0.222 / 0.250 | 0.222 / 0.250 |
+| F1 `analysis` | 0.857 / 0.824 | 0.500 / 0.615 | 0.750 / 0.667 |
+| F1 `result` | 0.769 / 0.833 | 0.762 / 0.706 | 0.870 / 0.833 |
+| F1 `news` | 1.000 / 0.923 | 0.857 / 0.769 | 0.750 / 0.824 |
 
+Spread across seeds, before then after: accuracy 0.125 to 0.188, macro F1 0.121 to 0.210, `opinion` F1 0.022 to 0.350.
 
+**Did it help, and how do I know:** Only partly, and on one seed. On seed 42 `opinion` F1 went from 0.200 to 0.600 and accuracy from 0.750 to 0.812, which clears the 0.50 `opinion` line there for the first time. On seeds 7 and 2024 accuracy did not move and `opinion` F1 went from 0.222 to 0.250, a gain of about one post that still fails the criterion. Macro F1 on seed 2024 slipped by 0.005, and `analysis`, `result` and `news` F1 each went down on at least one seed. Criterion 2 is still MISSED, because the target has to hold on all three seeds.
+
+I cannot call the seed 42 jump proof that the relabel worked. Only 4 of 207 rows changed, `opinion` has about 8 test posts per seed, so one post is 12 to 14 points of `opinion` recall, and the three seeds disagree. The seed 42 test set also changed: its confusion matrix now has 7 `opinion` and 8 `analysis` posts (before: 8 and 7), so one of my four relabeled rows landed in that test split, and the before and after scores there are not on identical labels. Seed 42 after: 3 of 7 `opinion` posts are right, 3 went to `result` and 1 to `analysis`, and 0 `result` posts were called `opinion`. The lopsided direction is the same as before (6 of 8 went to `result`), so the relabel did not remove the lean toward `result`. The honest reading is that the relabel moved the right label in the right direction on every seed, by a large amount on one, and did not fix the label.
+
+**The spread is now a finding of its own.** Accuracy moved 0.188 across seeds, and macro F1 moved 0.210, both well over the ten-point mark for a stable measure. It was already over it before (0.125 and 0.121), and the relabel made it worse, because one seed improved and two did not. The test split is 32 posts and `opinion` has 8 of them, so a few posts decide each verdict. My dataset is too small for these per-label criteria to give a stable answer, and a single relabel cannot be told apart from split noise at this size. I would need more posts, or more seeds, before I trusted any one run.
 
 ---
 
 ## What's Still Broken
 
-<!-- For each criterion still missed: what you'd do, and why you stopped. -->
+**Criterion 2 (per-label F1), still MISSED.** `opinion` F1 is 0.600, 0.250 and 0.250, so it passes on seed 42 only. What I would do next: have a second reader label the 45 remaining `opinion` rows blind, count how many flip to `analysis`, and add about 30 new `opinion` posts that are plainly mood or joke with no checkable support. I stopped because this unit allows one change, and four relabeled rows did not settle the boundary. On seeds 7 and 2024 only 1 of 7 `opinion` posts is right, and on seed 7 five of the seven went to `analysis`, so the leftover `opinion` rows still look like `analysis` to the model.
 
+Criteria 1, 3, 4 and 5 are met. The spread (accuracy 0.188, macro F1 0.210) is not a criterion, but I would not trust any single seed until I have more test posts.
 
+**The gap between what I meant my labels to capture and what the model learned:**
 
-**The gap between what I meant my labels to capture and what the model
-learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
-
-
+I meant `opinion` to be a mood or joke with nothing checkable behind it, but I defined it by what it lacks, so the model never found a signal of its own for it. In the confusion matrices `opinion` is the one label whose misses go to different places, and on seed 42 3 of 7 still went to `result` while 0 `result` posts were called `opinion`.
 
 <!-- ═════════════════════════════════════════════════════════════════════
 

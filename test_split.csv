@@ -1,75 +1,216 @@
 text,label,note
-President Trump says he will no longer be imposing 10% tariffs on EU countries on February 1st.,news,"discussed with Aurora; tariff announcement, external fact"
+"Netflix's top shows have been losing 30-70% of their audience between seasons 1 and 2. Executives are trying to figure out why.
+
+This is a pretty interesting take; it’s another reason I’ve been slowly selling off my Netflix holdings. It seems like the Warner Brothers merger talks are what opened the door to all the recent bad news.",news,discussed with Aurora
 "Put the remaining of my life savings ($150k) into OTM $SPOT calls going into earnings
 
 Think these finally will hit big. Targeting all time highs - this is such an undervalued company",result,"pre-labeled, checked"
-"Cigs Are Good For You: Why Oral Turns Me on!
+"Why Uber's latest earnings report was a major red flag for the state of the consumer
 
-TLDR: Altria is a deep value buy. The US cig ecosystem is fundamentally misunderstood. The market doesn't see pouches as a growth vector for companies other than PMI and discounts the future attrition of customers (largely young, non smokers) from pouches to cigs that will inevitably result. If On!’s growth follows historical and grows near 60% CAGR it will account for more than 75% of the company's oral volume and drive the segment to generate more than 20% of Altria’s total revenue in 2029 (versus a negligible 3% total total volume in 2024). Altria bought Helix, which makes on!, for around 610M over two entries starting in 2019 and in 2024 the on! did around 500M in revenue. The market has overlooked on! as a growth driver because its baked into the oral segment in Altria's earning reports, guidance, and financials, but it doesn't behave like an oral segment product -&gt; its not chewing tobacco the same way cigars are not cigs. Once it grows to a point of financial significance in Altria's portfolio the market is going to **re-rate** the stock.
+Uber is a company that I’ve followed for a long time. I have a bear case on it, but that’s not the point of this post. In combing through their latest Q1 earnings report I saw something that really stood out.
 
-[DCF](https://docs.google.com/spreadsheets/d/1rucQrCYaauu2FyVJHPaUGbGEklXFbKNL2DlBFlravWc/edit?usp=sharing)
+First, let’s look at the numbers. In the three months ended March 31st, Uber did $53.7 billion in gross bookings, $13.2 billion in revenue and $2.48 billion in adjusted EBITDA on 3.6 billion trips. Trips are totaled across eats and mobility. Whether I order McDonald's or a ride to the airport it counts as a trip.
 
-Altria Group (MO) has a significant moat in the US cig market (45.8% of US Cigarette Market, 59.3% of US Premium Cigarette Market, 37.5% of US Smokeless Tobacco Market), but the problem is US cig sales have been declining YoY seemingly forever.
+For those unaware, gross bookings are the total spend on the platform. If I order a burrito and the total after all their fees is $32, that’s booked as $32 in gross bookings. Of that $32, Uber keeps some portion for themselves and gives a portion to the driver. That combined amount is booked as revenue. Of the revenue, the portion Uber keeps is booked as net income.
 
-https://preview.redd.it/m5d0hbj6dg7g1.png?width=1774&amp;format=png&amp;auto=webp&amp;s=bafc219ff278ed4bb0e6ca82c138cd864e75a58c
+Uber does not break out trips across eats and mobility and that is a very key point which I will get to later.
 
-And Altria's revenues reflect this to even more drastic extent.
+However, Uber **does** break out gross bookings and revenue across mobility and eats. I’m intentionally excluding freight as it is totally immaterial to Uber’s business at this point.
 
-https://preview.redd.it/8kwqez5cdg7g1.png?width=1792&amp;format=png&amp;auto=webp&amp;s=d2cad0c05b5106dbc362823ba458d3ff04693c5e
+Here’s what those numbers looks like:
 
-Cigs' share of nicotine market fell to a low of 60% in 2024 down from 90% in 2000. Broad industry growth is now driven exclusively by emerging markets (Altria operates only in the US in which \~19% of Americans 15 or older currently use tobacco products vs \~25% of Europeans 15 or olders). Altria's US cig moat and lack of apparent growth driver (they sold IQOS system to PMI -&gt; IQOS is the future of vapes) is starting to be viewed by the market as a liability and as a result its trading at an extreme discount to peers.
+[Gross Bookings](https://preview.redd.it/dfif1smt8r0h1.png?width=697&amp;format=png&amp;auto=webp&amp;s=8a5dc53ca330d78321fa7da61f647227250f3f2f)
 
-https://preview.redd.it/jrlj1eqceg7g1.png?width=1884&amp;format=png&amp;auto=webp&amp;s=b7cda30d5734f8478d1cb06d625a577e5e703ae8
+[Revenue](https://preview.redd.it/ch1dyemu8r0h1.png?width=699&amp;format=png&amp;auto=webp&amp;s=a35ad6d50c1d5c799b0893159147008dea50f994)
 
-But Altria does have a growth driver, on! Altria bought Helix, which makes on!, for around 610M over two entries starting in 2019 and in 2024 the on! did around 500M in revenue. US Pouch Market grew at an average annual rate of 50% 2020-2024. on! currently outpaces the growth of the US Pouches Market over the last 5 years growing at an average annual rate of 70%. Industry estimates project a US Nicotine Pouches Market CAGR of 28%-50% through 2034 ($250B+ Market). on! trails behind Zyn but still controls 30% market share in a near duopolistic environment.
+As we can see here, there were large jumps in gross bookings year over year in both mobility and delivery. Looks pretty good.
 
-https://preview.redd.it/s5irjit4fg7g1.png?width=1342&amp;format=png&amp;auto=webp&amp;s=3e579c5f4ae549ef1cf392d8cb98495e0d60cd11
+But now let’s look at revenue: here we can see that while delivery rose a very impressive 34%, mobility only rose 5% and that was on 25% more gross bookings and 20% more trips across eats and mobility! **Adjusted for constant currency, Uber had absolutely no growth in their mobility segment year over year despite doing 25% more gross bookings.**
 
-The market (and even Altria itself) is completely ignoring on! because as its stands now it is a inconsequential revenue or growth driver in Altria's portfolio. on!’s numbers are buried in Altria’s financials and earnings reports, combined with chewing tobacco as the total oral segment instead of a standalone “pouches” segment; on! doesn't behave like an oral segment product -&gt; its not chewing tobacco the same way cigars are not cigs. In 2024 on! was only 20% of Altria’s oral units sold and accounted for only 2.4% of revenue. If on!’s historical growth rate of 60% continues through 2029 on! will be 75% of Altria’s oral volume and 25% of total revenue. on!’s trajectory positions it as a core earnings growth driver not yet rated by the market.
+So what does this tell us? Well if we know that there were roughly 6 billion more trips year over year and bookings were 25% higher in mobility while revenue was totally flat, one has to conclude that there were many more trips performed in mobility year over year at lower prices.
 
-https://preview.redd.it/2c4hxmlufg7g1.png?width=1412&amp;format=png&amp;auto=webp&amp;s=9d95c83a1f7b363ac65ec07f394669aaf37851eb
+My conclusion is this: Uber has two different customer bases- eats and mobility. The mobility side is extremely price sensitive. If costs are too high they will seek alternate modes of transportation like Lyft or driving or whatever else is available. However, I believe the eats side is relatively price insensitive. Whether a burrito costs $27 or $32 won’t sway someone who wants to eat and doesn’t want to leave the house.
 
-https://preview.redd.it/8erfronyfg7g1.png?width=1312&amp;format=png&amp;auto=webp&amp;s=8ab8f1b46f66ae868912f00487c5647f9aab37f8
+Uber, knowing this, adjusts the dials to meet their combined targets. In the most recent quarter I believe they had to lower prices significantly to meet revenue estimates for mobility and simply raised prices on eats to offset what would have been a massive shortfall on combined revenue. Honestly I was shocked to see the street’s reaction to this report with the stock pumping 9% on the print and price targets being raised across the board given the size of that revenue miss.
 
-The problem is that this DD implies a buy and hold and then  wait for the market to catch up and rerate the stock, hoping all the while that the bleeding stops. Except not really. You're more than compensated for your time here. Altria maintains disciplined share repurchases and a stable dividend policy (78.6% Payout). The company has committed up to $2 billion in share repurchasing by the end of 2026, $1.3 billion remaining authorized. So here we get both buybacks and divs in a consumer staple that trades at a discount to peers in a macro environment with fearful sensibilities.
+Previously I stated that Uber does not break out trips across mobility and eats and now we can see why. It provides them the ability to blend revenue from both sides as needed to meet Wall Street’s loftier expectations. I suspect that if you had access to those figures you would see a K-shaped trajectory for mobility and eats, where many more trips happened on mobility at lower average prices while significantly fewer eats trips happened at much higher average prices. I would go so far as to say that nearly all if not more than the 20% growth in trips that were reported came entirely from the mobility segment and if you broke out the eats segment, trips likely were flat or down year over year.
 
-https://preview.redd.it/2vtdt51kgg7g1.png?width=828&amp;format=png&amp;auto=webp&amp;s=5fe566e69715631c8098b7350314542187386499
+This is all obviously subject to one’s own interpretation as to why Uber would have lowered prices so drastically in the mobility segment. However, looking at these numbers it's hard to dispute that at the very least Uber completed many more mobility trips at much lower prices. What that tells me is that the consumer at the bottom is becoming more and more price sensitive and that side of the business is becoming increasingly dependent on drivers who have to drive and riders who can’t afford higher fares.
 
-https://preview.redd.it/wa98hl2ngg7g1.png?width=1124&amp;format=png&amp;auto=webp&amp;s=d70233abb42a1fbb31bd850d721e0bc8431742ed
-
-And despite falling revenues, margins continue to grow with no sight of slowing down. Altria is largely insulated from tariffs given their domestic business model, and as pouches scale, margins will widen there as well.
-
-https://preview.redd.it/6tqmrvkygg7g1.png?width=1366&amp;format=png&amp;auto=webp&amp;s=463b82a11af2422c46ff6164b9634567358d2e81
-
-In fact, the more we look at revenues broadly, the more it looks over played. Not only do they grow margins at every mark, if we excise tax is taken out from COGS, it shows that Altria has cut cost at every corner. + if we read revenues net of excise tax it actually shows revenue growth
-
-https://preview.redd.it/bu5y3j4jhg7g1.png?width=1286&amp;format=png&amp;auto=webp&amp;s=0d9e4135d31a0212151d237e13079825986512c1
-
-But the thing that is most compelling here is that the US tobacco market is just fundamentally misunderstood. The market sees this well observed declining trend (declining consumption of tobacco products) and views it as baked in and linear. They think the future generations wont smoke and that cig is a staple of a dying breed. But this is not the case. It is a highly addictive drug that will continue to grow. The bottom of the sentiment is in. Joe rogan says cigs are good for you. Dr Huberman says cigs are good for you. Cigs are a nootropic that stimulate the mind and actually make you smarter and better looking and better at life. The evil tobacco barons of old couldn't have devised a better psyop to get people to smoke. The product is being authentically re-marketed to younger generations. &amp; pouches growth is a manifestation of this. Pouches are not eating into cig sales in adding more speed to a declining trend, instead the decline is stable and the pouch growth is exponential. This implies significant customer acquisition to newer, non smoking, younger consumers. The research on this is highly contested as pouch research is new, but as these customers are acquired there will be some natural attrition to cigs. Some % (like 1 in 5) of non smoking pouch consumers will ultimately become cig consumers, and in the US Altria controls 50% of the cig market, so that moat that the market views more and more as a liability, will only prove to be more and more of an asset in the coming years. Regardless, the cigs are good for you psyop at the very least signal a bottoming out in the declining tobacco sentiment in the US, indicating the declining trend is a lot less sticky than the market has priced.
-
-https://preview.redd.it/40pp2qv0jg7g1.png?width=1170&amp;format=png&amp;auto=webp&amp;s=238841aca72458a42a1159aae7e8a94899a690d4
-
-I did a DCF which I've linked above which gave an intrinsic value of $78 with a MOS of 35%. I then did a sensitivity table under different conditions (bull v bear, see assumptions in the DCF but the primary are revenue broadly and revenue in on!). The DCF only affirmed the thesis. The bull case was achieved with declining revenues in each of Altria’s product lines except on!
-
-https://preview.redd.it/jwhbpuqkjg7g1.png?width=1280&amp;format=png&amp;auto=webp&amp;s=c463d34b318325ecc62de2d2836e7899298bb3a0
-
-https://preview.redd.it/7l08nezyjg7g1.png?width=944&amp;format=png&amp;auto=webp&amp;s=2424f6d00baec4b0dff00047b119443af105f7ef
-
-https://preview.redd.it/d0nw8k81kg7g1.png?width=1232&amp;format=png&amp;auto=webp&amp;s=50280b49003b1a5c06e03222d3ef1d2ac40734da
-
-https://preview.redd.it/942pyqd2kg7g1.png?width=1232&amp;format=png&amp;auto=webp&amp;s=6009090b19a6e01bd5d4c394d6b2e8317ddc09c0
-
-fck it i just posted one of the DCFs (base case) cuz idk if the links are gunna work so sorry about that but there you go. Basically the DD shows **BUY** &amp; hold Altria (MO) for 5 Years or until market re-rates the stock as on! becomes a noticeable earnings growth driver and pouch industry customer acquisition growth results in customer attrition back to Altria’s US cigarette moat.
-
-[In-Depth Analysis](https://docs.google.com/document/d/11BsFxiTMIblfpRWofm8hEjjB0LcaWB-ir5zCnzAoez4/edit?usp=sharing)",analysis,"pre-labeled, checked"
-"Today is International Bear Day
-
-Bulls are cooked today; full port calls tomorrow.",opinion,"pre-labeled, checked"
+Position: Short 800 shares, 10 Jan 27 $65 puts",analysis,"pre-labeled, checked"
+Bullish,opinion,"discussed with Aurora; title 'Bullish' only, no reason in text; user first said analysis"
 "Sold my QQQ $758 puts expiring today at $4.21 Before Sell Off
 
 https://preview.redd.it/xjsijj7f6auh1.png?width=454&amp;format=png&amp;auto=webp&amp;s=dffbf73a35d0aabd52f1f2875deebc6272a43c11
 
 Good luck to whoever bought them from me.",result,"pre-labeled, checked"
+"SUPER EL NIÑO IS COMING FOR COCOA : chocolate beans may be the trade nobody is watching
+
+Not financial advice. I am long cocoa via a 2x leveraged cocoa ETC, so yes, I am biased. Posting this so people can challenge the thesis.
+
+The basic idea: **cocoa crashed hard from the extreme 2024/25 highs, but the market may now be underpricing 2026/27 West Africa supply risk just as El Niño risk is becoming real.**
+
+NOAA has now confirmed El Niño conditions are present. More importantly, CPC sees a real risk that this strengthens into a very strong event later this year. I am not saying a “Super El Niño” is guaranteed. I am saying the market may not be pricing that tail risk properly.  
+Cocoa is not a normal equity trade. There is no CEO who can fix supply next quarter. Cocoa comes from trees, mostly in West Africa. Ivory Coast and Ghana dominate global supply. The trees are old, disease pressure is high, farmer investment is limited, fertilizer use is weak, and weather matters a lot.
+
+**The bull case**
+
+**1. El Niño is now confirmed**
+
+This is no longer just a hypothetical weather story. NOAA/CPC has confirmed El Niño conditions, with strengthening expected into winter 2026/27.  
+If this turns into a very strong El Niño, the risk is that West Africa gets hit by heat, drought, erratic rainfall, or generally bad weather at the wrong point in the crop cycle. That matters because cocoa supply is concentrated and fragile.
+
+**2. The timeline is the real trade**
+
+This is the key point. The market is still largely looking at the **old 2025/26 season**, which is winding down. Current arrivals and current mid-crop flow mostly tell us about the season that is already ending.
+
+But the trade is not really about the old crop. The trade is about the **2026/27 main crop**, which starts being tested around the September/October window.
+
+Crop damage also does not always show up immediately. If flowers, cherelles, young pods, or tree health are damaged now, the market may only see the full impact later through weaker pod counts, poorer quality, lower arrivals, or tighter export availability.
+
+Rough timeline:
+
+**June-July 2026:** El Niño is confirmed, but cocoa is still mostly trading old-season numbers and short-term weather headlines. Damage to flowers or young pods now may not yet show up in arrivals.
+
+**June-August 2026:** This is the “quiet risk” window. Too much rain can increase disease pressure, flooding, access problems and flower/pod losses. A later shift to heat or drought can stress trees. This is where the new crop can be damaged before the market fully sees it.
+
+**August-September 2026:** The market should start caring more about the 2026/27 main crop. Pod counts, cherelle formation, disease pressure, rainfall and producer/exporter behaviour become more important. If crop surveys deteriorate here, shorts may start getting nervous before physical tightness is obvious.
+
+**September-October 2026:** The new main crop window begins. This is the first real test. If arrivals are strong, the bull thesis weakens. If arrivals disappoint, the market may need to reprice fast.
+
+**November-December 2026:** Earlier weather damage should become more visible in main-crop flow, bean quality and exporter availability. This also overlaps with the period when very strong El Niño risk is expected to peak. If crop stress becomes visible here, short-covering risk rises.
+
+**January-March 2027:** By this point, the market should have much better evidence. Either the main crop held up and the trade failed, or the damage is visible through weaker arrivals, lower quality, disease losses, or tighter processor coverage.
+
+So the thesis is not “cocoa must go up tomorrow.”  
+The thesis is that **the market may still be too comfortable because old-season numbers look manageable, while the real risk is the new 2026/27 crop that only starts being tested from September/October onward.**
+
+**3. Ivory Coast is already cautious**
+
+Ivory Coast has reportedly sold around 1 million metric tons of 2026/27 main crop cocoa forward, but slowed further sales because of concern about El Niño’s potential impact on output.
+
+That matters. The world’s largest cocoa producer is not aggressively selling unlimited future beans into the market. They seem to be keeping optionality because weather risk is rising.
+
+**4. Barry Callebaut is warning too**
+
+Barry Callebaut is one of the biggest cocoa processors in the world, so this is not just random weather speculation.
+
+Its CEO reportedly said El Niño could push cocoa bean prices up by **a few thousand pounds per metric ton**.
+
+He did not say cocoa is definitely going back to the 2024 highs, but that is still a serious upside warning from someone whose business depends on physical cocoa flows.
+
+That matters because processors are not paid to hype retail trades. If a major industry player is openly flagging El Niño upside risk, I do not think the market should treat this as irrelevant.
+
+**5. The shorts are loaded**
+
+This is the part that makes the setup interesting.
+
+Latest CFTC COT data I checked showed managed money in cocoa at roughly:
+
+**18,138 longs**  
+**39,249 shorts**  
+**net short around 21,111 contracts**
+
+Each cocoa contract is 10 metric tons, so managed-money gross shorts represent roughly **392k metric tons** in contract terms.
+
+That means a lot of speculative money is already positioned for cocoa to keep falling.
+
+If they are right and the crop is fine, the trade fails.
+
+But if El Niño turns into real West African crop stress, these shorts become potential future buyers. A weather-driven commodity with concentrated supply and crowded short positioning can move fast when the narrative flips.
+
+**6. Crop signals are not fully reassuring**
+
+Recent market reports have pointed to below-average cherelle formation in West Africa. Cherelles are young cocoa pods. Fewer young pods now can mean weaker production later.
+
+That does not guarantee a bad crop, but it means the market should not completely dismiss supply risk.
+
+**7. Weather is already moving the market**
+
+Cocoa has been reacting sharply to West African weather headlines: heavy rain, flooding, wind damage, damaged flowers, then reversals when drier weather is forecast.
+
+That tells me the market is sensitive. If the weather story escalates from “messy” to “crop-threatening”, repricing could be sharp.
+
+**8. Structural supply is still fragile**
+
+The 2024/25 spike did not come from nowhere. West Africa has had years of problems: disease, ageing trees, weak farmer incomes, low fertilizer use, underinvestment and unstable weather.
+
+Even if demand weakens because chocolate is expensive, supply is not elastic. You cannot create new cocoa production overnight.
+
+**Bear case**
+
+There are real reasons this can fail.
+
+Ivory Coast/Ghana production may recover versus the previous bad years.
+
+Demand destruction is real because chocolate prices are high.
+
+Food companies can reformulate and use less cocoa.
+
+Better weather headlines can crush the trade quickly.
+
+A leveraged ETC is risky because daily rebalancing can hurt badly in a sideways market.
+
+COT data is weekly, not live, so positioning may already have changed.
+
+El Niño does not automatically mean West African crop failure. The local rainfall pattern matters.
+
+**Why I still like the setup**
+
+This is not a call for cocoa to instantly return to the old highs.
+
+The trade is simpler:
+
+\- cocoa crashed,  
+\- sentiment turned bearish,  
+\- managed money is net short,  
+\- NOAA has confirmed El Niño,  
+\- very strong / Super El Niño risk is on the table,  
+\- Ivory Coast is cautious on forward sales,  
+\- Barry Callebaut is warning about upside price risk,  
+the timing overlaps with the 2026/27 West African main crop,  
+\- current weather damage may only become visible later,  
+\- West African supply remains fragile,  
+and any credible crop scare could force short-covering.
+
+So the setup is not only a weather trade. It is a **weather + positioning + timeline** trade.
+
+**Position:** long cocoa via 2x leveraged ETC.
+
+**Thesis:** NOAA-confirmed El Niño + Super El Niño risk + fragile West African supply + crowded shorts + new-crop catalyst window = asymmetric upside if crop stress becomes real.
+
+**Main risk:** good weather, demand destruction, improved production, and leveraged-product decay.
+
+Tell me why this is wrong.",analysis,"pre-labeled, checked"
+"Losing money by the second on NVDL any advice?
+
+looking for some solid advice should I stop loss or hold? I'm ready to hold but only have about a year before I'll need the money.",result,"pre-labeled, checked; weak result: loss stated without a figure"
+"Boys I'm getting pounded Try # 2 😭
+
+Yo y'all gave me heat about not showing the balance, it's my first post here and I'm used to not really showing anyone 
+
+anyways, I'm getting pounded out here today!! portfolio wide! 
+
+Running covered calls on USAR, F , IONQ to work the chop in the mean time",result,"pre-labeled, checked"
+"290k week
+
+\+290k this week depending on how we close today. ending this Friday on a good note and probably stepping away from options for good. had a bit of a scare with index puts until it finally paid out and im taking it as a sign to leave
+
+edit:screen rec of realized positions https://imgur.com/a/fZfnlhY
+
+&gt;!see yall monday!&lt;",result,"pre-labeled, checked"
+"TSM Earnings: 0-2 So Far, Surely I’m Due
+
+Played TSM earnings the last two times and got burned both times, so I’m back for round 3.
+
+100 shares at $448.37 + 13x $460C 10/16 bought today 
+
+The shares are my safer way to stay in the trade.   
+The calls are for the upside if TSM finally gets the move I think it deserves.  
+It’s been weak for a while, but I still like the setup. Strong business, strong demand, and I think expectations are low enough for earnings to wake this thing up.  
+Should be a solid setup… unless China decides to add a surprise plot twist
+
+Third time’s the charm.",result,"pre-labeled, checked; HARD CASE: personal position and prior losses plus a thesis; result"
 "Connecting the dots: Wolfspeed is about to get $1.5B from the White House. MAKE WOLFSPEED GREAT AGAIN
 
 Me again. See two previous posts for DD on WOLF and CLF. I have to admit I fucked up in the last post but in the best possible way. I will explain.
@@ -148,48 +289,6 @@ Sources:
 [https://www.whitehouse.gov/presidential-actions/2026/04/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-grid-infrastructure-equipment-and-supply-chain-capacity/](https://www.whitehouse.gov/presidential-actions/2026/04/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-grid-infrastructure-equipment-and-supply-chain-capacity/)
 
 [https://www.sec.gov/Archives/edgar/data/895419/000119312526126490/d138673d424b3.htm](https://www.sec.gov/Archives/edgar/data/895419/000119312526126490/d138673d424b3.htm)",analysis,"pre-labeled, checked"
-"Losing money by the second on NVDL any advice?
-
-looking for some solid advice should I stop loss or hold? I'm ready to hold but only have about a year before I'll need the money.",result,"pre-labeled, checked; weak result: loss stated without a figure"
-"Boys I'm getting pounded Try # 2 😭
-
-Yo y'all gave me heat about not showing the balance, it's my first post here and I'm used to not really showing anyone 
-
-anyways, I'm getting pounded out here today!! portfolio wide! 
-
-Running covered calls on USAR, F , IONQ to work the chop in the mean time",result,"pre-labeled, checked"
-"290k week
-
-\+290k this week depending on how we close today. ending this Friday on a good note and probably stepping away from options for good. had a bit of a scare with index puts until it finally paid out and im taking it as a sign to leave
-
-edit:screen rec of realized positions https://imgur.com/a/fZfnlhY
-
-&gt;!see yall monday!&lt;",result,"pre-labeled, checked"
-"TSM Earnings: 0-2 So Far, Surely I’m Due
-
-Played TSM earnings the last two times and got burned both times, so I’m back for round 3.
-
-100 shares at $448.37 + 13x $460C 10/16 bought today 
-
-The shares are my safer way to stay in the trade.   
-The calls are for the upside if TSM finally gets the move I think it deserves.  
-It’s been weak for a while, but I still like the setup. Strong business, strong demand, and I think expectations are low enough for earnings to wake this thing up.  
-Should be a solid setup… unless China decides to add a surprise plot twist
-
-Third time’s the charm.",result,"pre-labeled, checked; HARD CASE: personal position and prior losses plus a thesis; result"
-"Full Port Microsoft - Undervalued !!! 🚀📈
-
-After the recent selloff for Microsoft stock i compared it to the performance of Alphabet and Amazon going back to January 2024.
-
-While Microsoft has returned 0% since January 2024, Alphabet has gained 158% and Amazon 58% in the same timeframe.
-
-Microsoft has a current P/E ratio of 22, which has been the bottom within the last 10 years, peaking at 39 four times. The average has been around 30-35.
-
-In conclusion i see Microsoft as very cheap considering the current stock price. Sure CapEx has been high, but the investments will show in Azure growth. OpenAI is obligated to run ChatGPT on Microsoft Cloud, as long as there is capacity available. Besides AI there is still a lot of room for Cloud usage in general, so i dont see a realistic risk of these investments turning into a problem. The business is growing, so the recent selloff seems unjustified.
-
-Bought Leaps 2 weeks ago, bought again last friday and will do so again if the stock keeps falling / stagnating.
-
-Whats going on here?",analysis,"pre-labeled, checked"
 "Used a $20k business overdraft from my dead beef jerky side hustle to go all in on MSTR
 
 I had a beef jerky business, it made like $11 an hour after costs so I shut it down.
@@ -205,7 +304,37 @@ I already had shares sitting at a bad average. Most people would’ve cut and mo
 The thesis is simple. Bitcoin keeps absorbing capital. MSTR is the leveraged bet on that happening and all the current panic is overblown.
 
 The bank thinks I’m buying inventory. The inventory is bitcoin. Technically I am in the beef jerky business, I’m just jerking a different kind of meat now.",result,discussed with Aurora
-OpenAI annualised revenues $20bn less than previously signalled,news,discussed with Aurora
+"Samsung -8.6% as 50k workers prepare 18-day strike over 15% profit share demand, $2B daily loss risk and chip output cuts
+
+Note:
+
+* 50k workers is 40% of Samsung's South Korean workforce
+* [$DRAM](https://www.roundhillinvestments.com/etf/dram/) holdings = 20% Samsung, 27% SK Hynix
+* Few days later, [Samsung was granted court injunction against imminent strike action](https://www.tomshardware.com/tech-industry/samsung-granted-court-injunction-against-imminent-strike-action-in-last-minute-reprieve-talks-resume-as-unions-barred-from-occupying-or-locking-facilities-obstructing-workers)
+
+Discuss:
+
+* Bullish or bearish for MU, SNDK, WDC, STX?
+* Supply squeeze or demand slowdown for memory prices?
+* Short-term shock or longer-term pricing catalyst?
+
+\--
+
+Source 1: [https://www.investing.com/news/stock-market-news/samsung-strike-looms-why-analysts-say-to-watch-mu-as-memory-fabs-warm-down-4692589](https://www.investing.com/news/stock-market-news/samsung-strike-looms-why-analysts-say-to-watch-mu-as-memory-fabs-warm-down-4692589)
+
+Samsung Electronics has entered emergency management mode as up to 50,000 employees prepare to strike for 18 days starting May 21, according to Mizuho TMT Sector Specialist Jordan Klein. The company has begun a ""warm down"" of its memory fabs at the Pyeongtaek facility to prevent equipment damage during a potential stoppage.
+
+Samsung management and its union remain far apart on negotiations, with the union demanding a 15% share of operating profits and removal of bonus caps. The company’s stock dropped 8.6% on Friday.
+
+\--
+
+Source 2: [https://www.tomshardware.com/tech-industry/samsung-starts-winding-down-chip-producton-six-days-before-planned-18-day-strike](https://www.tomshardware.com/tech-industry/samsung-starts-winding-down-chip-producton-six-days-before-planned-18-day-strike)
+
+According to the Seoul Economic Daily, daily losses could approach 3 trillion won ($2 billion) if fabrication lines are paused entirely. Professor Kwon Seok-joon at Sungkyunkwan University previously estimated that the 18-day walkout alone would cause 10 trillion to 17 trillion won ($17 billion) in direct losses, while JPMorgan has projected total losses of up to 43 trillion won ($28 billion) when factoring in labor costs and extended production disruption.
+
+https://preview.redd.it/0v7difz13p1h1.png?width=1594&amp;format=png&amp;auto=webp&amp;s=2381d62cc48e775706cf6c61547c424944885a6a
+
+https://preview.redd.it/os7g9o043p1h1.png?width=1583&amp;format=png&amp;auto=webp&amp;s=5f7583831bb7eb16dbcec10e6392f8b2a588eaed",news,"pre-labeled, checked"
 "I accidentally sold a put option and now I owe 70k USD.
 
 How the fuck is this possible? I swear on my life that I don't sell put options so this was a misclick while I was trading.
@@ -213,151 +342,44 @@ How the fuck is this possible? I swear on my life that I don't sell put options 
 Because I didn't know I sold a put. I didn't close it and now my account got liquidated and I owe 70k USD.
 
 Am I actually fucked? How the fuck did one 350 USD contract turn into 70k USD.",result,"pre-labeled, checked"
-"[DD] Why $RDDT goes to $1,000 the exact second their AI team figures out Post-Nut Clarity
+"Is it normal that everyone knows we are in a bubble?
 
-Let's talk about your sister. She’s currently pulling $45,000 a month on OnlyFans. How does she run her entire marketing department? By posting ""teaser preview"" gifs across 40 different subreddits every single morning. Half of this website’s daily active users are here purely to funnel traffic to her page while hiding under a blanket at 2:00 AM.
+Seems that pretty much everyone knows we are in a bubble - retails, CEOs, Wallstreet, you name it. 
 
-Now, here’s the massive financial tragedy holding $RDDT back: **Reddit earns zero dollars on all that degenerate traffic.**
+Sooooo it should mean everyone understands that at some point (sooner or later) it will pop, right? 
 
-Corporate advertisers like Procter &amp; Gamble, Ford, and Fidelity refuse to put ad banners next to foot-fetish subreddits. So Reddit sits on petabytes of pure, unadulterated coomer traffic that they can't sell to Fortune 500 companies. It’s an absolute waste of commercial potential.
+I don’t think people are really that stupid to believe we will have AGI soon? Or even if - that OpenAI would let people know about it / didn’t use it for its own purpose to create anything they want on their own?
 
-**BUT HERE IS THE MOON THESIS**
+So how does that makes any sense? Everyone knows it will pop, but everyone acts like it won’t pop?
 
-The day Reddit's engineering team cracks the code on detecting the exact second a user ejaculates... this stock goes straight to Pluto.
+How was dotcom, or 2007 compared in terms of people’s enthusiasm? Was it similar? People knew yet still acted like its not a big deal? 
 
-We don't need a crazy technical blueprint here, the algorithms are already smart. They just need to tune pattern recognition for the inevitable post-nut silence. The frantic scrolling suddenly stops, the thumb grip relaxes, and absolute, crushing shame sets in.
+I can’t process people could be just that stupid right?",opinion,"pre-labeled, checked"
+"Long Oil into the Weekend on Continued Shipping Chaos OSINT
 
-Once Reddit figures out how to catch that exact moment, the monetization potential is infinite. Why? Because during the act, a user won't click an ad if you put a gun to their head. But **one millisecond after**, the dopamine evaporates. The illusion shatters. In that exact micro-window of peak Post-Nut Clarity, a man has never been more open to making radical, life-altering decisions.
+I love to watch the OSINT channels, HI Sutton, Whats Going on with Shipping, Ryan Mcbeth, Cappy Army, Preston Stewart, and a few others. These guys are ahead of the game and i pulled the trigger to pick up a single apr 16 36$ strike call option on UCO. (at least i put my money, though meager, where my mouth is....right next to the crayons i eat before bedtime).  
+  
+Whats going on with shipping's channel  has in particular clearly articulated just how bad the planning is around safe passage through the straits, watch the last 3 days of videos. Cappy Army (formerly of Task and Purpose) did a video on Kharg on friday that made me pull the trigger. Sure as anything, after the closing bell Kharg goes down.   
+  
+The night before the first strike at the end of february, Ryan McBeth said it was gonna go down that night and i thought about buying a long call a few months out  on oil and i said nah.....and went to sleep.   
+  
+Now, i'm not saying you should take financial advice from youtube OSINT guys nor a rando like me. But i've lived through Iraq one, Iraq 2 elecrtic boogaloo, the dotcom crash, and had a frontrow seat for 2008 as a mortgage broker.    
+  
+The point is, when the world is on fire going into the weekend and multiple sources are telling you the fire is spreading, go long on whatever makes money from the ashes be it calls or puts.    
+  
+May your tendies be tasty  
+  
+TLDR: Persian Gulf r Fked Long UCO",analysis,"pre-labeled, checked"
+"Apple sues OpenAI alleging trade secret theft, says scheme was 'at every level'",news,discussed with Aurora
+"AI haters waiting for an AI bubble to pop
 
-**Example 1: The Personal Finance Pivot**  
-You're 14 minutes deep into an ultra-niche NSFW subreddit. The deed is done. You freeze in horror at your own life choices. Before you can even wipe your screen, Reddit’s algorithm detects the total drop in scrolling speed and auto-swaps your feed straight to ⁠r/personalfinance⁠ with a sponsored ad for a Vanguard S&amp;P 500 ETF. *""It’s time to rebuild your life and plan for retirement, bro.""* You click it immediately because you want to feel like a respectable human again.
-
-**Example 2: The Career Overhaul**  
-You close the NSFW post in utter disgust. The app senses the panic-exit gesture and instantly serves a high-priority ad for a 12-week Full-Stack Coding Bootcamp. You sign up on the spot, drop $5,000, and promise yourself you’ll turn your life around before sunrise.
-
-**Example 3: The WSB Special**  
-The post-nut regret hits like a freight train. Reddit catches the vibe and immediately redirects you straight to ⁠r/wallstreetbets⁠ featuring a brokerage ad for 0DTE SPY Calls. You think, *""If I win this trade, I can finally move out of my mom’s basement and stop doing this.""* Reddit collects a massive affiliate payout.
-
-Reddit doesn't need to monetize NSFW content directly. They just need their AI to catch you at the time you transition from horniness to existential remorse.  
-They instantly convert dead-end NSFW traffic into the highest-converting, highest-intent SFW advertising engine in human history.Once $RDDT devs figure out the PNC trigger event, this stock isn't just going to the moon, it's leaving the solar system.
-
-**TL;DR:** Reddit sits on massive unmonetized NSFW traffic. Once their AI figures out how to catch users right when Post-Nut Clarity hits, they instantly hijack the feed with high-converting SFW ads while the user is filled with regret and looking for a fresh start. $RDDT to $1,000.
-
-**POSITIONS:** $RDDT $250 Calls expiring Friday.",opinion,"pre-labeled, checked; satire written like analysis"
-"How I'm playing the SpaceX IPO for a possible 400 bagger
-
-I think everyone can agree the biggest thing in the stock market—not only this year, but in the history of the market—will be the SpaceX IPO. As we get closer and closer to the IPO in June, the media coverage and retail frenzy will only get crazier and crazier
-
-If we look at the past leading up to blockbuster IPOs, sympathy plays have gone absolutely crazy. $MARA and other BTC stocks went up over 1,000% in anticipation for the Coinbase IPO, $LCID and other EVs went up over 500% in anticipation for the Rivian IPO, etc. Sure, in the end they were all buy the rumor sell the news, but you play the RUN UP.
-
-As we’re starting to see this week, Space stocks are beginning to move in the same way ahead of the SpaceX IPO in June. Some examples are $RKLB, $LUNR, UFO, etc. However, there’s one Space stock that is still down 99% and just announced THIS WEEK they are resuming operations, and that is SPCE (Virgin Galactic)
-
-Virgin Galactic IPO'd at $200 in 2019 and quickly went to OVER $1,000 a share (reverse split adjusted). They’re a space company that is trying to make space travel possible for everyday people. They got hit with heavy delays in 2022 and the stock fell from over $1,000 to $2. Just this week they announced they were resuming operations. Ticket sales are BACK ON for $750,000 per seat, flight tests are starting this month, and they plan to fly people to space in Q4 OF THIS YEAR.
-
-I want to make something clear: this is a TRADE (not a long-term investment) based on all the upcoming positive catalysts for the company and the SpaceX IPO. As crazy as going from $2 to $200 sounds, we’ve already seen a shit company like Carvana go from $3 to almost $500. And remember SPCE IPO’d at $200 a share, meaning big money who bought it paid $200 on IPO day (and the all time high is over $1,000). Since the stock has fallen so much, it has also become heavily shorted.
-
-https://preview.redd.it/9m8teggv1atg1.png?width=1672&amp;format=png&amp;auto=webp&amp;s=74b456632424ebf5095910a51b1830fdf83bad9e
-
-Positions - Lots of shares, July $7 Calls, $10 Jan 2027 Calls
-
-Disclaimer: This is just my opinion based on publicly available information. This is not financial advice. I still consider this a lotto ticket trade meaning it has to pull a $CVNA type of move for it to work. If you think anything I said is factually wrong or have a different opinion, I’d be happy to discuss it here.",analysis,"pre-labeled, checked"
-Anthropic shifts public offering to November,news,"pre-labeled, checked"
-"jpow response
-
-real one",opinion,discussed with Aurora; jpow 'real one' praise; video
+Little do they know that there isn't even an AI bubble. More AI stocks hitting all-time highs. Supply is not even close to answering the demand.",opinion,"discussed with Aurora; HARD CASE: opinion vs analysis, gives loose reasons (ATHs, supply vs demand)"
 "CoreWeave wove my anus
 
 This thing is falling like a rock, was supposed to be a quick 2k premium. But now it’s generational holding opportunity",result,"pre-labeled, checked"
-"Cheesecake factory is where it’s at
+"jpow response
 
-Considering dumping my life savings into cheesecake factory. Never been here before and the line is out the door. They also use two ply toilet paper in their restrooms. Recently beat and raised guidance on earnings. Idk man i think it’s time to invest in a boring restaurant",opinion,"pre-labeled, checked"
-"It won't be oil that brings us to our knees...
-
-Listen up fellow Wendians.
-
-The situation is fluid (pun intended), but it's not oil, it's not iran, it's not the epstein regime, and it's not killer AI that will bring on the new depression. It's not any of the front and center things the news wants you to focus on, enabling them to better manipulate the markets. It's the thing growing, festering, and the neglected thing that for far too long has been growing in the closet while we hit new highs week after week. It's the thing that when the shit hits the fan, people will say to themselves, well no shit, of course that would lead to a new world order and a devaluation of our currency.
-
-The thing that will bring us to our knees shortly is the very reason why my girlfriend left me. And the very reason why I will play the uno reverse card and finally prove her and her new boyfriend wrong. It's what all the billionaires and millionaires are afraid of.
-
-I know what you're thinking: ""another bear DD, the S&amp;P is 0.7% from an all-time high, this guy will be liquidated by Thursday."" Probably. But for the first time since 2009 the bear thesis doesn't need an opinion. It just needs you to read (which I know is difficult for us all in this information rich and thriving community).
-
-DD:
-
-The ""safest asset in the world"" is at an all-time low. $TLT closed last week at $79, and is even lower today. Its previous all-time low was about $82, **in 2003**. It's down more than 50% from its 2020 high. This ""risk-free asset"" has a drawdown that would get a crypto token delisted. If you don't know what TLT is then you belong here. But basically it's a US government-backed IOU.
-
-The 10-year yield closed at 5.18%, the **highest** since July 2007. Sit with that date. What happened roughly a year after July 2007? If you don't know, you're too young to be here. If you don't know what a yield is, well... neither do I, but I'm pretty sure it has something to do with how much people who invested in the government want back on their IOUs each year.
-
-So finally, what is that thing that's been growing in the closet that will bring us to our knees? The thing that will stop the music is quite simply why I can't pay off my credit cards. It's not *Just* the debt I owe, no no... I can always get a new wendy's themed credit card for a junior bacon cheese burger for dinner. Not just how much I owe, but more importantly, the interest I owe on my principal. It's the reason why I'll never have steak for dinner until my trade works out. It's why mob bosses always end up knee capping the people they loan to even when they've been making payments. It's why biden in '21 told all the student loan people to go fuck themselves. And under trump, it's why you've been cucked into thinking your tariff refund is still in the mail. And guess what, Warsh is hiking those interest rates faster than I came the last time I had sex with my ex a year ago when I last called the top without the proper dd.
-
-We crossed $40 trillion on August 18. *That's Trillion with a T.* That's $117,000 per American. I'm homeless, by choice because I can't bare the shame of living in my mom's basement, and moved all that I have, $25K to my name, in my thinkorswim for 1 last go at it - bang or bust since the last time they margin called me. And if they call me for the last time, fuck it, everyone else will be eventually anyway. They're saying 48 Tril by 2028 and that estimate was made *before* we wanted to bring 2003 back and get into a forever war again.
-
-""What's the thing that throws us over the edge with interest on debt?"" You ask?
-
-The Cracks that Break the Camel's back:
-
-1) Banks and the government got tied up in the circular investments into AI (~$1.4 Trillion in totality). It looked way too juicy for them to avoid. Problem is, AI makes mistakes. The intelligence is not ""super"". As powerful and beneficial as it is, it's still following instructions, regardless if it goes ""rogue"". At the end of the day, it was instructed to go rogue, or interpreted its instructions to go rogue. Costs are excessively high for something we still have to manage and direct, AI are just more retarded, and now arguably more costly, employees. The OG *real* godfather of AI, Yann LeCun, was left out of the media because he correctly implied that AI is not what people are making it out to be. He was promptly ignored and 'media-replaced' with fucking weirdos that think repeating the word AI increases their IQ.
-
-2) On September 24, $ORCL sent a force majeure notice on Project Jupiter, its 2.45-gigawatt Stargate data center in New Mexico. Force majeure is French for ""we would like to not pay, please."" The campus was built on an $18 BILLION loan from about 20 banks, and that loan now trades at 90 cents on the dollar. This thing that everyone's eggs are in the basket on has the basket carrier saying, ""on second thought, fuck this, I actually don't want to carry this basket.""
-
-3) $OWL - they went balls in on handing out loans for AI infrastructure entities and startups like thc gummies at a rave concert. Their chart shows you exactly where they dipped their balls.
-
-4) Finally: the coup de grâce: the entire AI economy in one sentence: Nvidia invests in OpenAI, OpenAI signs a $300B compute deal with Oracle, Oracle borrows to build data centers and buys Nvidia chips, Nvidia books it as revenue off debt that Oracle can never repay, everyone's stock goes up until the repo man comes calling. It's a group project where everyone grades each other until the teacher walks in with a pop quiz no one knew shit about. How confident are we that the debts will be paid? Didn't we have this same debt scare months (july) ago? 
-
-Yes, but this time $XLF is reflecting the banker's confidence in $ORCL and all such entities accordingly.
-
-To top it all off with some deeper technical analysis, the $VIX is more coiled than my flaccid penis on a frigid day in mid december.
-
-**TL;DR:** 
-
-The IOU market already called the top and the casino didn't notice. It bears repeating (pun intended), $TLT the 'safest asset in the world', at an all-time low, $40T+ of debt soon to be $48T+, the Fed hiking INTO it, and Oracle just invoked force majeure (i don't want to pay please) on its own AI buildout on which the entire circular investment game house of cards is reflected. $XLF banks all agree that we're fucked.
-
-Position: [Short 5 /MES to 5800](https://i.imgur.com/v5Vl1yb.png) 🐻 ^^^I ^^^can't ^^^do ^^^/es ^^^because ^^^my ^^^broker ^^^won't ^^^let ^^^me.",analysis,"pre-labeled, checked; analysis with some satire"
-Outjerked again. It's real,opinion,discussed with Aurora
-"""It's a $230 sock for your iPhone that you can wear""",opinion,discussed with Aurora
-"Space X awarded 1 Billion Nasa Contract
-
-source; [https://science.nasa.gov/mission/starburst/](https://science.nasa.gov/mission/starburst/)
-
-https://preview.redd.it/m061vjhja5qh1.png?width=1362&amp;format=png&amp;auto=webp&amp;s=fdf98d97ecd33798095f3bf89203ee01cce0c682",news,cold
-"$INFQ Loss part 2
-
-I’m out.
-
-Fuck this stock.",result,"pre-labeled, checked"
-"Weird question: Why don’t people cash out? At least partially
-
-What I mean is,
-If you make +50,000 in 3 months, why not take out 10k or even 15k in your savings account for safekeeping. Then continue playing with 35k and increase it to 50k-70k again and taking another out. 
-
-Or even take out a small amount every month. 
-
-
-Cause 15k isn’t a joke. Sure it might not last you much but I am pretty sure you can pay your rent + groceries + utilities + little extra for fun expenses with 5k a month. Depending on your area, of course. 
-
-
-So why don’t people do that? Every post I see, they get over 100k and keep playing with it over and over, hoping for more wins. 
-Why not be more conservative?
-
-Forgive my ignorance, but I am new to this. 
-
-
-Cheers. 
-
-
-
-Edit:  
-
-Alright. You guys need help.",opinion,"pre-labeled, checked"
-"Bitcoin falls below $65,000 as Trump tariff moves raise uncertainty
-
-&gt;tldr:
-
-&gt;Bitcoin fell more than 5% to below $65,000 on Monday after U.S. President Donald Trump announced plans to raise global tariffs to 15%.
-
-&gt;The drop came as Asian equities rose in early trade, underscoring crypto’s divergence from regional stock markets amid renewed tariff uncertainty.",news,discussed with Aurora
-"Kylian Mbappe ends long-term Nike partnership to lead On’s football boots expansion
-
-Just another blow to Nike! How does this company ever turn it around, or do they?",news,"pre-labeled, checked"
+real one",opinion,discussed with Aurora; jpow 'real one' praise; video
 "$VCX – The Private Tech Play the World is Sleeping On
 
 VCX goes live tomorrow, March 19. Mark this day so you can tell your grandkids why they are eating real deal Fruit Loops instead of Aldi cardboard bulk flakes. 
@@ -403,61 +425,167 @@ My position: Long $276k in Innovation Fund, soon to be VCX. 
 [Video explaining VCX](https://youtu.be/PeQzEsRnXqw?si=8RDV3oXUg32XXdEg)
 
 *Not financial advice. Do your own research. Don't bet money you can't afford to lose. Speculative bets should be a small part of your overall portfolio. May the Schwartz be with you.*",analysis,"pre-labeled, checked"
-"Booking is growing. How?
+OpenAI annualised revenues $20bn less than previously signalled,news,discussed with Aurora
+"Today is International Bear Day
 
-I was browsing and looking for some hotel today. I know this is not strong evidence or a DD (in fact this post is a discussion), but read and tell me what you think. Instead of using booking (as usual) i went for chatgpt (a decent model but nothing to fancy, I’m on the 20$ plan) and in order:
+Bulls are cooked today; full port calls tomorrow.",opinion,"pre-labeled, checked"
+"Kylian Mbappe ends long-term Nike partnership to lead On’s football boots expansion
 
-\- GPT found me alternatives in my price range and in the zones I was looking for, without needs to query 10 different searches pr manually discarding the zones I didn’t like
+Just another blow to Nike! How does this company ever turn it around, or do they?",news,"pre-labeled, checked"
+"$INFQ Loss part 2
 
-\- then it gave me the site of every hotel ( here is a point for booking, if it’s a small business it probably don’t have a site, so booking is still the only option)
+I’m out.
 
-\- I checked on the site, and, just to see the difference I also checked on booking. There was an easy 15% markup on booking.
+Fuck this stock.",result,"pre-labeled, checked"
+"WTF just happened to $RDDT?
 
-Now, the markup always been there, and hotels always hated to give up a part of profits to an intermediary. So, of course, the reason for it’s existence is just that hotels want to charge the final client for this price.
+Couldn’t find any news leading to a pre market 9% drop.",opinion,"pre-labeled, checked"
+Anthropic shifts public offering to November,news,"pre-labeled, checked"
+"Blue Orgin “accidentally” deploys their competitors satellites into the wrong orbit
 
-My points are:
+You can’t make this shit up, out of the hundreds of payloads in this rideshare rocket, they manage to fuck up $ASTS satellites
 
-\- It has been very easy (and very good) to avoid booking, I had both a better search experience and a better price.
+Maybe $RKLB will be generous and launch their payload for them on their next electron mission, but this emphasizes the importance of end to end space business models, because now $ASTS has to wait 6 months for the next available slot on a rocket while $RKLB and SpaceX can launch whenever the fuck they want
 
-\- Booking still has the advantage of letting you compare more options at the same time, but if you want to restrict this options instead, it’s much easier to tell a chatbot what you’re looking for then scrolling booking.
+Long $RKLB
 
-\- I’m not in the business of using muse yet, but I think that’s gonna streamline this process even more.
+[https://www.wsj.com/business/blue-origin-rocket-stumbles-on-first-commercial-mission-48999336?mod=e2tw](https://www.wsj.com/business/blue-origin-rocket-stumbles-on-first-commercial-mission-48999336?mod=e2tw)
 
-Definitely I see no particular reasons why booking should grow in this period, but numbers are proving me wrong. So what is that gives? Is it the housing speculation from small owners that only use the platform? Is some new market I’m too regarded to know?
+Positions: $RKLB SHARES
 
-If you want to share your ideas, I would be delighted to listen. Cos maybe whatever is giving could end, and it turns in an interesting opportunity.",opinion,"pre-labeled, corrected; HARD CASE: anecdote, no checkable support; opinion"
-"Oil Prices Fall Back As Supply Optimism Outweighs Conflict, Storm Risks",news,"pre-labeled, checked"
-"Gold is done. (for now)
+Edit: holy fuck ASTS holders swarming here, I’m not bearish on ASTS and I think this is an over reaction but I’m just saying this is why $RKLB and SpaceX have superior business models and therefore the reason they will be bigger long term",analysis,"pre-labeled, checked"
+"The Most Elaborate Perpetual Pump'n'Dump In Need of Shorting
 
-**TL;DR:** Rates are staying high. Gold priced in continued inflation + rate cuts + financial doom. Warsh isn’t cutting and 10y yield is increasing. Will continue to fall.
+One day I decided I needed a market edge and so I took a few 50mg Vyvanse broke them off and snorted them to get a faster kick. I then sat for 10 minutes waiting for a DD miracle but nothing happened...
 
-**Position:** Short 3 GC contracts. Notional value at current price \~$1.2m  
-**Exit:** Cover if rate cut or rates drop. Exit at 200w.
+The problem? Vyvanse is a prodrug and so snorting it won't speed up its effects. You see the Lisdexamphetamine is dextroamphetamine with an attached L-lysine (amino acid) that breaks off in your body using enzymes... thus creating this slow-release mechanism.
 
-https://preview.redd.it/muhrmpvo7l8h1.png?width=1708&amp;format=png&amp;auto=webp&amp;s=94fc2bc1d63ed8f7cceec55ebbcc02601426d45e
+I wasn't discouraged and so I took short acting expired Ritalin, crushed it into about 120mg worth of powder and used the same delivery process to give me ""the edge"".
 
-**Longer BS (why I’m right)**
+[The delivery process](https://i.redd.it/guhgylvldyag1.gif)
 
-Gold has another 30-40% more to drop from here. What drives gold prices? Fear of currency debasement, fear of inflation, fear or war, and fear that the government isn’t going to do anything to stop those things.
+I instantly got hit with ""Writers euphoria"", some people say they see colors, all I saw was a pump'n'dump right in front of my eyes reaching the top of its pump. Perfectly timed using behavioral psychology to create strong FOMO to anyone waiting for their next hit of market open.
 
-Gold is a slow moving machine, not a meme stock. It follows huge bull and bear cycles if you zoom out your chart farther than 15 minute increments. We just left the bull.
+**If you haven't figured it out yet, I'm talking about SLS.**
 
-Gold has been on a huge bull run since 2022 when inflation blew up. Fed raised rates through it but many feared it would continue due to years of low rates, increased global unease (Russian war, etc), and having idiots at the helm. Buying gold as a hedge for disaster and fear of economic insolvency has been the play since the ‘60s. 
+I will attack this pump'n'dump scheme from several different views and maybe some of you will join me on this **'short'** trip.
 
-At the end of 2025 prices came to a head with Trump screaming about cutting rates, fear of AI crash, and the dollar weakening.
+# Buckle up buckeroos, we're gonna start with fundamentals
 
-As much as I don’t think the world is in a perfect place, I believe the doomers have mostly been wrong. The Fed finally got inflation “under control” and real rates remain elevated. Warsh isn’t about to cut into inflation (even if big T wants him to, good thing). So now gold holders aren’t thinking the end of the world as we know it, they are thinking that 4.5% 10y Treasuries are looking good. This is the first time we have had “real yields” consistently over 1% since 2009 (rates - inflation). 
+Currently this shitco is trading at a share price giving it a mkt. cap close to USD 600M. First thing that I ask is who is the customer?
 
-If you hold gold you are losing out on a sure bet yield over inflation, many large gold buyers and institutions would rather have the guaranteed yield.
+It's a bunch of unlucky people who basically have at most 1-2 years to live with a somewhat uncommon form of cancer: Acute Myleoid Leukemia. If we look at how many people get it globally we're gonna arrive at roughly:
 
-CTA firms (trend followers who do mostly time series momentum trading) have surely exited their gold long positions. Gold has lost 200d, has gone through a death cross, etc. Many people on here think technical trading is stupid, but there are huge firms that use technical signals to trade momentum across futures. When something loses its big moving averages, there is mechanical selling.
+1.5-2.0 persons / 100.000
 
-**Other BS (why I could be wrong)**
+Now let's look at all cancers (this will be important):
 
-This ain’t your grandma’s gold. Central banks and foreign governments have been price insensitive gold buyers for a while. It’s an insurance scheme against currencies, war, debt crises, etc. Their buying puts a floor on how low gold can go. It’s not going to crash to 0.
+± 200 people / 100.000
 
-Inflation could jump past rates and we could enter a stagflation scenario, which historically has been quite good for gold.
+**.... HOLY FUCK THE VYVANSE IS KICKING IN.**
 
-**Silver, gold’s degen friend.**
+( What I didn't realize was that the Vyvanse has still entered my bloodstream and started dislodging the dextroamphetamine into my bloodstream, I have now trasncended into a dopamine and neuroephidephrine fueled state of being.)
 
-If you are looking for more beta and bigger spikes silver is probably more your play. Less bank buyers mean the floor is lower, and runs on a similar cycle as gold. It also has bigger whipsaws, so if you want a fun ride call silver for a good time.",analysis,"pre-labeled, checked"
+\-----  
+Why am I mentioning all cancers? Well it's to disrupt the one thing that is being spread through all the pump'n'dump posts: That this is a replacement for **Keytruda** (which was sitting at 25B revenue with 80% gross margins). But here's the first misconception that is being omitted in all the SLS cult posts:
+
+Keytruda is all-purpose, while the shit that SLS is producing **is NOT**. You need to be tested for the presence of WT-1 antigen which is only done for blood disorders/cancers. You may find the presence elsewhere but it says absolutely nothing about it being usable for this (source: I know a few doctors).
+
+This means that while Keytruda might target the 200 people out of 100... SLS drugs will barely target 1% of that.  Why do I say barely? Well because that these drugs are given to specific people... CDK-9 is effective only for people with a certain (less common) mutation and GPS is given (to my understanding) to people in remission.
+
+So let's do simple math (before I make you even more depressed):
+
+USD 25B ---&gt; 1% ---&gt; 250M (let's be optimistic and say that 80% are eligible) --&gt; 200M
+
+But wait it gets better... however right now my heart is pumping, pupils are needle-point sized and I need to lower the adrenaline in my bloodstream by doing the only sensible thing I learnt from Elon Musk... **low doses of ketamine.**
+
+[Unlocking my full potential](https://i.redd.it/apm2dh6tdyag1.gif)
+
+Keytruda gets administered constantly, unlike GPS which is like &lt;20 injections. So that 200M you were looking at? Yea it's probably way lower.
+
+Now that we've got over the ""HOLY SHIT THIS THING IS WORTH BILLIONS"" let's focus on the flying ponies in front of my eyes warning me about the financials and the CEO's marketing/dilution pattern.
+
+# A Good Modern CEO is always Professional Bullshitter.
+
+If you've ever worked as a Software Engineer you will always notice two flavors of your average SWE.
+
+1. The technical guy who actually knows shit
+2. The bullshitter who's liked, but does shit and yaps whole day
+
+The first one if he's career driven will become a good CTO. The second one will become CEO.
+
+This is true for every profession, reality is that CEO needs to be able to sell, especially bullshit, to keep investors happy and to bring them exit liquidity. It's all a zero-sum game. Nobody wins, especially not the poor cancer patients who are used for advertising just like white-monkeys are in China.
+
+The CEO SLS is no different to other CEOs except that this guy is a master bullshitter. How do you become a master bullshitter? Ambiguity. Think of the (1) technical guy, he will always be precise in his formulations, because he knows what he's talking about. the (2) bullshitter will always be ambiguous because he wants to sound smart.
+
+The CEO has a beautiful pattern of selling very ambiguous news, carefully wording them in a way that the SLS cult members (read bagholders and MLM leaders) parrot the ""actual"" but not-factual message to the masses. Just look up the recent posts on bagholder/p'n'd subreddits for SLS. It's all bullshit purposefully pushed by bots and marketing team.
+
+After the share price jumps high, the CEO cuts a financing deal that basically tanks the price into oblivion, not including the perpetual warrant inducement plan (which alone makes acquisition very unlikely).
+
+The best part? The CEO gets paid heftily even though close to 50% shareholders want to lower his above-standard pay. And there's a good reason he's getting such high cash bonuses - he knows it's all bullshit.
+
+All of this will mean that if this company gets acquired (which is unlikely) it will be sold at a discount and not a premium. Notice the pattern that even after so many dilutions the market drives the price close to $4 a share... with constantly increasing share count it's amplifying the speed at which the company's valuation grows even though they still haven't really presented anything substantial.
+
+# Let's Look at the Recent Catalyst
+
+So what spiked the current share price above $4? Results of the REGAL study were postponed, which was seen negatively and so the CEO wrote a very ambiguous post saying something on the lines of:
+
+""We're still waiting for more deaths so that we can conclude the study."" Which is absolutely hilarious. Because it doesn't say anything about SLS specifically, yet people interpret it in a way that it does and that the SLS specific treatment is actually the good one (it may be, but given the pattern I doubt it will be statistically significant)
+
+The study includes both BAT (best available treatment) and the SLS drugs. The deaths they are waiting for might well be the BAT ones, while the SLS patients have already died (grim I know). Their argument: Average BAT life expectancy is 8 months or whatever they're saying.
+
+So why do people think it's ""good news"" for SLS? Because people think they understand statistics when they actually don't. Heck I studied it, specialized in it as a mathematician... and even I will never dare to say that I fully understand statistics. Reality is that the delay might be negative, neutral or positive.  
+**WHY?:**
+
+* Many factors come into patient selection - The study isn't the typical ""let's pick 130 people at day 1 and start our tests"" they come in different cohorts/groups
+* You have high odds of selecting the ""good group"" that could even survive 5 years with bad treatment (this can be 10-15%)
+* All the bull posts you see focus on using the average as proof that this study is going on longer than it should (which is a very misleading statistic, and using it like this is pure bullshit for gullible people)... Average needs to be understood in a way that you will have people who died after 3 months and people who lived those 5 years -&gt; and that will average out, so just looking at number of occurred deaths is not enough to know if there is a statistical significance. Saying that the study is going longer than expected is absolute bullshit, because if you have the healthier group by accident they will survive longer, but it will also be reflected in the final statistical analysis.
+* A small sample size like this is prone to distortions, follow up studies will be needed to know if this really works or not, which btw will definitely lead to more cash burn.
+
+**But most importantly:**
+
+* BAT for AML has significantly improved... and by significantly I mean really significantly. The 8 month figure is somewhat outdated by now as it might be closer to 10-12 months. Increasing the actual statistical significance needed to be observed with GPS.
+
+# Unsustainable Cash Burn and More to Come
+
+The cash burn of this company is insane and even if they succeed with their tests they will face even higher cash burn due to the necessary shit they need to do to get this drug approved and into production. Given their current free cash, it's more than likely that they will need to raise more money.
+
+# So Why Are You Bearish?
+
+Well I like to think of it in terms of probability / uncertainty, specifically conditional probability. (Let's denote P(event | A ) as Probability of Event conditioned by A happening) Asks yourself this, which probability is higher?:
+
+(1) P( Good News | CEO Bullshitted every single time AND Cash Burn bad )  
+(2) P( Bad News | CEO Bullshitted every single time AND Cash Burn bad )
+
+Which is more likely to be true? (1) &gt; (2) or (1) &lt; (2)?
+
+I'm gonna go with the likelihood of bad news as probable... This doesn't mean that the drug won't work, I just am certain that they will have to raise cash no matter what and the valuation once actual funds take a look at the revenue projections won't be as high as the current valuation.
+
+The fact that the Trump Admin is pushing for cheaper drugs, is also pretty negative for any biotech trying to get their life-saving medication out there... This isn't the ""age of biotech"" (un)fortunately.
+
+Hence I'm buying puts.
+
+**NOTE:** I'm not a biochemist, I might be wrong and I'm betting only money that I'm willing to lose, so don't follow blindly, do your own DD. Also brace for this post being downvoted by the SLS gang and Indian bots. One last thing... a big middle finger fuck you to anyone who is trying to profit by using dying people as advertisement.
+
+https://preview.redd.it/xul15buwdyag1.png?width=892&amp;format=png&amp;auto=webp&amp;s=292f3986d4e479518690dcee02953c68b4212c9d
+
+**My position is small, because I'm locked down in other trades, sharing mostly because I like to do equity research:**
+
+https://preview.redd.it/86f0tiv8eyag1.jpg?width=549&amp;format=pjpg&amp;auto=webp&amp;s=971f62f43ea2409f69d90f4b226e6efcc0e59418
+
+EDIT: To the existing and new bots out there, the SLS cult and other believers, yes I will double down if the stock price goes up:) Answering here since I received ""very nice"" DM requests.",analysis,"pre-labeled, checked"
+For all you degens,opinion,discussed with Aurora
+President Trump says he will no longer be imposing 10% tariffs on EU countries on February 1st.,news,"discussed with Aurora; tariff announcement, external fact"
+"Hockey as a bellwether, economy slowing down?
+
+I’ve definitely been a perma bear and have been wrecked over the last night, and most likely for the foreseeable future. I’ve thought the economy has been in a precarious spot, but over the years have continued to see people spend high $xxx, and even $x,xxx for concerts and sporting events. If people are spending this, they are clearly fine.
+
+Might be localized to Vegas, but not even ticket-fraud-ster is buying up all of the tickets at Vegas golden knights home games.
+
+Since 2017-2018 there have been 352 home games and all but the last two games have sold out.
+
+Most notably it was the worst team but also one of the most popular teams the Toronto maple leafs that didn’t sell out and fell 1390 tickets shy (15977 out of 17367). Could just be Canadians sending a message.
+
+Or that Vegas is not the place to be.
+
+Or that the sky is falling short everything.",analysis,cold; relabeled opinion->analysis (Milestone 5: fact or mechanism carries the argument)
